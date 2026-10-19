@@ -205,45 +205,74 @@ threads that draw facts.
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Top-level comments from 14 Hacker News
+threads, pulled through the public HN Algolia API (`hn.algolia.com/api/v1/items/<id>`)
+in October 2026. I picked threads to balance the labels: vendor complaints
+and Ask HN threads for `experience` (a registrar seizing domains, "what tech
+job lets me do the least work"), technical threads for `evidence` (the
+Cloudflare 18 Nov 2025 post-mortem, cloud VM benchmarks, WSL3 benchmarks,
+Intel vs. AMD benchmarks, the Section 174 tax letter), and opinion-heavy
+threads (Terry Tao and AI in math, "software factories", an
+LLM-proof programming language). Up to 28 comments per thread. I dropped bare
+links, comments over 1,500 characters, exact duplicates, and comments that
+were only questions. Of 322 collected, 29 more were skipped while labelling
+(questions with a sentence of context, fragments, typo reports), leaving 293.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** All 293 labels were assigned by Claude using my
+definitions and decision rules. I did **not** do a cold pass and did not
+check the labels row by row, so there are no rows marked `cold`. The `note`
+column says `pre-labelled by Claude, not human-checked` on every row, and
+posts that were hard calls say which two labels they sat between (13 rows).
+This means the labels measure how Claude applied my rules, not how I apply
+them, and there is no cold set for unit 6's agreement report.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `opinion` | 189 | 64.5% |
+| `experience` | 54 | 18.4% |
+| `evidence` | 50 | 17.1% |
+| **Total** | 293 | 100% |
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* "A few comparisons just from a gaming PC with a 9800X3D … 7 Zip
+> benchmark 9800X3D 130 GIPs compression … C8A 21577 MIPs … A desktop class
+> CPU is definitely quicker single threaded and multithreaded, no surprises
+> there"
 >
-> *Could have been:*
+> *Could have been:* `experience` or `evidence`
 >
-> *I chose, because:*
+> *I chose, because:* `experience`. It is full of hard numbers, but they come
+> from the writer's own machine, so the only way to check them is to trust
+> the writer. That's the main decision rule exactly: numbers don't make it
+> `evidence` if they're from the writer's own runs.
 
 **2.**
-> *The post:*
+> *The post:* "in my country, the Netherlands, part-time work is more and more
+> becoming the standard. Already, 75% of women and 30% of men work 32 hours a
+> week or less. … I myself started on 40 and will move to 32 hours somewhere
+> next year. It's your right by law to reduce your hours"
 >
-> *Could have been:*
+> *Could have been:* `evidence` or `experience`
 >
-> *I chose, because:*
+> *I chose, because:* `evidence`. It has both a public statistic and a
+> personal story, so I used the tie-break: which one does the advice rest on?
+> "It's very common here and won't be a roadblock" rests on the national
+> figures and the law, not on the writer's own hours.
 
 **3.**
-> *The post:*
+> *The post:* "This is an anonymous post on Reddit. I repeat. This was on
+> Reddit. Consider what credibility there might be."
 >
-> *Could have been:*
+> *Could have been:* `evidence` or `opinion`
 >
-> *I chose, because:*
+> *I chose, because:* `evidence`. It is short and sounds like a dismissal,
+> but the fact it states (the source is an anonymous Reddit post) is
+> checkable and is the entire argument. Tone doesn't decide it; whether a
+> stated fact is doing the work does.
 
 ---
 
@@ -297,7 +326,9 @@ of next unit's variance. -->
   notebook or `agreement.py` reports.
 - *What I changed:*
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** All 293 rows were labelled by Claude from my
+definitions and decision rules, and I did not check them row by row or label
+a cold set myself. Claude also collected the posts through the HN API.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

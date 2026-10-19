@@ -1,0 +1,1059 @@
+text,label,note
+"Would have been nice to see Scaleway included, I recently migrated from Digital Ocean to them and found them to be very similar in pricing and performance.",experience,"labelled by Claude, not human-checked (no cold set)"
+"What makes IoT devices special, and warrants carve outs for security / vulnerabilities?
+
+I guess I am not surprised there are security issues with these devices, because I think of most of them as coming from small companies, and wonder what the impact would be on the IoT space if only large players can work through more regulation.
+
+That said, I can't decide if I am more concerned about my Wyze camera sending data where I don't want it to, than my water heater leaking it's current temperature (implicating whether I am home or not).",opinion,"labelled by Claude, not human-checked (no cold set)"
+I’m not sure what people are doing with these subscriptions to feel the need to monitor what’s going on this closely. A $100 OpenAI subscription feels effectively infinite for my usage at home,opinion,"labelled by Claude, not human-checked (no cold set)"
+It shouldn't even be possible to seize a domain in the first place. Too often it ends up hurting legitimate actors.,opinion,"labelled by Claude, not human-checked (no cold set)"
+"In the essay Hackers and Painters it was mentioned that there is a project approach to learning and an academic one. The idea of pet projects is killed by language models, because what you did on weekends, a language model now does in half an hour. So you can try the other approach: maybe you should have more general knowledge right away, best practices, so more of an academic approach. In the academic approach you learn from the best reference examples, develop taste, and only then recognize what is good or bad and build your own. But here too you can see that LLMs iterate much faster, while you have to collect patterns for years, and you will also always be in the role of the one who is behind.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"Awesome write up. I use EC2 t4g instances extensively as I tend to scale workloads horizontal (using Kubernetes, Docker) and admittedly the workloads aren’t cpu constrained. Would be interesting to see how t4g’s compare to other low end comparable VMs on GCP, DigitalOcean, Hetzner. Though I get the difficulty testing as it requires maxing out CPU credits (waiting) for accurate results before starting testing for each VM.
+
+Looking forward to t5g’s whenever (if ever) they release.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"> They “used math for what they needed, which was to evaluate their models,”
+
+OAI first paper on the prize was a pretty shitty thing to do. But the rest of this looks like they are just mining the corpus and taking a brute force approach to do it.
+
+Im going to say this again, the ""pure math"" academic types need to get a grip. Plenty of your peers got PHD's and happily made a fortune in finance, while screwing the world (See 2008 housing bubble) and none of you said a peep about that.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"The military is being unleashed against civilians and this is the political issue you’re concerned about on today of all days?
+
+Dang, you’re one of the bad ones.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"In spite of this, I actually kind of did build a ""software factory"". The main reason why was because there is a number of things I build that really are just means to an end, tools where I could not give a shit less if the code sucks or anything as long as it does roughly what I want. This stuff will most likely never be posted anywhere, but that's not the point, because it still has quite a bit of utility. Having a ""software factory"" to build and maintain it seemed a lot less annoying than being a ""meat proxy"" all day just to maintain some tools that aren't very important.
+
+I could be misunderstanding what a ""software factory"" is but I think whatever I have done fits the criteria. I have a custom agent that goes around implementing software and maintaining private repositories completely autonomously and I can communicate with it using issues and comments.
+
+It seems like a useful pattern, just maybe not what people had in mind. I think people figured that you'd build an AI Microsoft or something. I don't think that's true because most of what a company like that does isn't really software engineering anyway, but there is probably still something to this pattern.",experience,"labelled by Claude, not human-checked (no cold set)"
+"Simple. Give the manufacturers the choice: either they must provide full (FLOSS) source code and documentation (full schematics) to the user to enable them to maintain, patch and thus secure their devices (see also: right to repair), OR they are liable for all damages (direct, indirect) for a 30 year expected lifetime that arise from security issues with the device AND must have insurance to cover those damages (so that they cannot get out of that liability by bankruptcy). Most will opt for FLOSS, and none will have the excuse that it would be more secure to make it proprietary. And then users will at least be able to fix issues -- and the security community will be way more effective at finding issues as it wouldn't have to do the slow reverse engineering.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"I haven’t watched the video, but likely it hasn’t answered a question: why math? Why not physics, neuroscience, philosophy or history? People claim math is both philosophical and art, but is that a sufficiently good reason to pursue math as opposed to other careers?
+
+A lot of arguments seem to try to cling to the “old” way of doing math: staring at the blackboard for hours, wrestling with papers and papers of equations, and do forth. Well, chess players went through a similar transition period: carrying books of openings and such, to chess database, to chess engine and now AI. And at no point I hear chess players complaining that we have to study chess the old way.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"Needs: network performance and costs, desperately.
+
+I wouldn't mind SAN/non-local storage performance and costs too.
+
+VM cost isn't where AWS gets you. It's ALLLLLLLL the other nickel and diming that they kill you on, especially since outbound data transfer costs a log of money to get off of the platform.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"Voluntary certification, please. Law is slower than technology. This is a good thing! EnergyStar is a great example of a voluntary program doing more good than DoE or FTC mandates. HIPAA is a good example of what happens when mandates can’t keep up with technology. When it comes to security, we can’t afford another HIPAA.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"I don't do this but I do have a system that imports all my conversations with AI (claude code, chatgpt, claude app, etc.) to a storage system I call Chatacombs: a unified storage of most conversations I've had with AI, as detailed as I can easily get.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"I have seen this argument many times before over the years. Formerly it was applied to someone creating a new programming language.
+
+People always told them they were wasting their time, and they were probably right about that.
+
+On the other hand every programming language that people rely upon today also had people telling them this when they started out.
+
+It's ok to attempt something that probably won't work if all you need is for enough people to make enough attempts that one of them works.",opinion,"labelled by Claude, not human-checked (no cold set)"
+"If you still did business with them after this, it's your own fault and you deserve everything they're doing to you:
+
+https://news.ycombinator.com/item?id=30504812
+
+(Before reacting to the headline, please read at least some of the discussion.)",opinion,"labelled by Claude, not human-checked (no cold set)"
+"this is where change management really shines because in a change management environment this would have been prevented by a backout procedure and it would never have been rolled out to production before going into QA, with peer review happening before that... I don't know if they lack change management but it's definitely something to think about",opinion,"labelled by Claude, not human-checked (no cold set)"
+"The best I can suggest is sysadmin for some boring government agency. It doesn't fit the ""fully remote"" part, but otherwise you are free to do whatever you want as long as everything is up and running. You also don't need to manage anyone, although you do have to talk to angry users once in a while.",opinion,"labelled by Claude, not human-checked (no cold set)"
+Amazing they managed to make virtualisation that slow in WSL2,opinion,"labelled by Claude, not human-checked (no cold set)"
+"It reads a lot like the Crowdstrike SNAFU. Machine-generated configuration file b0rks-up the software that consumes it.
+
+The ""...was then propagated to all the machines that make up our network..."" followed by ""....caused the software to fail."" screams for a phased rollout / rollback methodology. I get that ""...it’s critical that it is rolled out frequently and rapidly as bad actors change their tactics quickly"" but today's outage highlights that rapid deployment isn't all upside.
+
+The remediation section doesn't give me any sense that phased deployment, acceptance testing, and rapid rollback are part of the planned remediation strategy.",evidence,"labelled by Claude, not human-checked (no cold set)"
+"Namecheap cannot be trusted. I purchased a domain for a ""normal"" price (and yes, I have receipts). Shortly after they realized they fucked up, voided the purchase, and made it a $1,500 premium domain. Obviously, my recommendation is to avoid Namecheap.",experience,"pre-labelled by Claude, not human-checked"
+There's a reason it's called Namecheap not Namesafe.,opinion,"pre-labelled by Claude, not human-checked"
+Yea they did something like this with us. Fully turned off our business domain because we didn’t reply to a phishing email in 48 hours. We migrated out the next day once we got it resolved. It took over 6 hours from when we noticed the issue and responded until they turned it back on. Absolutely horrible service.,experience,"pre-labelled by Claude, not human-checked"
+This gave me the final kick to finally move away from Namecheap,opinion,"pre-labelled by Claude, not human-checked"
+"namecheap purchased by private equity CVC in 2025 for $1.5B
+
+so costs need to go down (-human support + ai automation)
+
+and prices go up (they increased i think .com 3 times this year alone)",evidence,"pre-labelled by Claude, not human-checked"
+"this is going to be an unpopular opinion, but this was the inevitable result of changing a function with trivial cost and broad social utility (name registration) from a public service to a commercial one. at the time we heard a lot of standard arguments about the innovation and competition that only a market based solution could bring. its really not a surprise that this is the kind of innovation that resulted.",opinion,"pre-labelled by Claude, not human-checked"
+"I’ve found really great but quite unique .com domain names available on name cheap then mysteriously gone registered to name cheap within hours, available for purchase at thousands.
+
+Always strenuously denied by the name cheap CEO “we do not front run domain names!”.
+
+I’d never do a domain name check there again.",experience,"pre-labelled by Claude, not human-checked; hard case: experience vs evidence"
+"I'm an Iranian---which is something you have no choice in, you just turn 4~5 and understand enough language that they tell you that you are an Iranian. And well out of believing namecheap is a good company (since I had my DNS there) I purchased my domain from them. Then one day these fuckers banned my domain, and my access to the dashboard without any warnings or headsup, didn't even allow me to move my domain to somewhere else, and those vultures from GoDaddy bought it in the auction and have put it for 3500€... Horrible people",experience,"pre-labelled by Claude, not human-checked"
+"this is one of the worst trends in modern time - ""AML"" and ""KYC"" being shoved into everything, requiring you to attach your own identity into everything and send your ID/passport to vendors left and right, no right to privacy at all.",opinion,"pre-labelled by Claude, not human-checked"
+"Between 2014 and 2018, Namecheap was a solid provider, and my experiences back then were consistently positive.",opinion,"pre-labelled by Claude, not human-checked"
+"Namecheap gave my account to an unverified third party
+
+https://news.ycombinator.com/item?id=49028037
+
+Namecheap banned a few domain names purely based on an ambiguous tweet that got 6 likes
+
+https://x.com/Namecheap/status/1489485337885921284
+
+Namecheap suspended Imgur in 2013 for 1 CSAM image out of millions
+
+https://news.ycombinator.com/item?id=5276648
+
+Namecheap snipes your domains
+
+https://news.ycombinator.com/item?id=28732510",evidence,"pre-labelled by Claude, not human-checked"
+"They requested presentation of a phone number and ID, so this sounds like info harvesting (for laundering / resale).",opinion,"pre-labelled by Claude, not human-checked"
+"Like I have said previously¹ about choosing a registrar: If you have regular backups, and if some downtime is not really a problem, it might be fine to use web site hosting, e-mail (and in extreme cases even DNS hosting), from some fly-by-night el cheapo provider. But your domain name registrar? Pick them carefully, don’t skimp, and make sure they have good support. Because when things go pear-shaped, you really want to be able to actually talk to someone to change your web server or e-mail DNS records (or even DNS servers) to somewhere else.
+
+Big registrars can’t afford any support costs since they prefer to squeeze the price down as far as possible, and therefore they prefer to simply lose or outright drop any customer in case of any and all problems. Conversely, small registrars may charge more, but have better (i.e. actually existing, and sometimes even dedicated and personal) support for when things go wrong, and have a vested interest in keeping you as a customer.
+
+A small registrar might also be so small as to know you personally, which will help monumentally against any social engineering attacks.
+
+Full disclosure: I work at such a registrar, but you’re probably not in our target market.
+
+1. <https://news.ycombinator.com/item?id=32095499>",opinion,"pre-labelled by Claude, not human-checked"
+"I had a similar experience with Namecheap. Their bot crawled my website while it was still under construction and apparently reported it to some security databases, causing my domain to be flagged as suspicious.
+
+Since then, my domain's reputation has been affected, and I often get security warnings when trying to access my own website through my company's VPN.
+
+Namecheap simply informed me that it had been a mistake, but the damage was already done, and the issue still persists.",experience,"pre-labelled by Claude, not human-checked"
+Sounds like Namecheap. They took one of my domains (held for many years) and try to sell it back to me for thousands because now it's a valuable domain.,experience,"pre-labelled by Claude, not human-checked"
+"There Oughta Be a Law.
+
+OK, but seriously, if my domain name vanishes all the things I won't be able to log into are insane. Over the last thirty years, many many more ""little people"" have come to rely a lot more heavily (and immediately) on their domains working.",opinion,"pre-labelled by Claude, not human-checked"
+"This is an anonymous post on Reddit.
+
+I repeat. This was on Reddit. Consider what credibility there might be.",evidence,"pre-labelled by Claude, not human-checked; hard case: evidence vs opinion"
+Friends don't let friends use namecheap.,opinion,"pre-labelled by Claude, not human-checked"
+"Namecheap is the worst! Our CTO left and our account was tied to his phone. Our CEO didn't want to talk to him, so, over chat, I made them remove the phone 2FA. They didn't authenticate me in any way - only gave them a good story and our username. I know people trash talk GoDaddy, but I've been the most happiest with them - they have support, if you have lots of domains, they assign to your an account exec that can do stuff for you. I've dealt with literally all registrars as I own thousands of domains. Nobody else comes close to GoDaddy - they have APIs, they have support, they listen. Plus, they are big and you can sue them - try suing company abroad if they mess up!
+
+As far as I recall, Namecheap was based in Eastern Europe - as an Eastern European, I can tell you that I would never put anything important in an Eastern European company! Their new Spaceship offshoot is lipstick on a pig, literally.
+
+Cloudflare is also not a good choice - you have no support! Porkbun may seem cool, but I'm not impressed as they lack some basic features such as profiles, let's say.",experience,"pre-labelled by Claude, not human-checked"
+"Same here, one scam-like email to just one of the connected addresses (renewals go everywhere), 1 week to comply, domains updated Friday night, ""risk and compliance"" who are supposed to react in 12-24 are still thinking about it.
+
+Account of 14 years, always paid from the cards in the same name. Can't think of any valid reason to do this, hope they lose most of their customers and go bankrupt.",experience,"pre-labelled by Claude, not human-checked"
+"Well, if a deal sounds too cheap to be true ...",opinion,"pre-labelled by Claude, not human-checked"
+And NEVER use an email address on some domain/service for administration of that domain/service.,opinion,"pre-labelled by Claude, not human-checked"
+"Nearlyfreespeech.net is the only safe DNS provider in my estimation
+
+I’ve used them exclusively since 2011 and it’s been nothing but wonderful",opinion,"pre-labelled by Claude, not human-checked"
+"Not an option for personal domains or small companies, but MarkMonitor is a great choice for bigger companies or critical domains.",opinion,"pre-labelled by Claude, not human-checked"
+One time they randomly took my domain offline because they thought my contact details weren't verified but they were. Had to contact support,experience,"pre-labelled by Claude, not human-checked"
+"I find it interesting that, several years ago when discussing AI, folks used to focus on how automation would first come for blue collar work. Things like driving being automated and truck drivers replaced. And then eventually on the horizon we would see things like this.
+
+But we still have no self driving cars. Seems like the automation came by in the opposite direction. Perhaps driving will actually be the final thing automated.",opinion,"pre-labelled by Claude, not human-checked"
+"TLDR: ""I didn't understand this proof and there is no one to explain it to me""",opinion,"pre-labelled by Claude, not human-checked"
+"I find this entirely self serving.
+
+Terrence Tao was very supportive of AI and formalizing math with lean when it looked like it was giving ‘generalists’ like him an edge over mathematicians too deep into one particular niche field.
+
+But now that it’s letting everyone, including mathematicians who are perhaps too specialized, explore ideas and patterns from related math fields, he’s suddenly ‘on a war footing’.",opinion,"pre-labelled by Claude, not human-checked"
+the live video interview on numberphile comes without the New York Times' narrative filter,opinion,"pre-labelled by Claude, not human-checked"
+"“They took’er jobs!”
+
+Funny when it’s someone else eh?
+
+Just learn a new trade Terry.
+
+(I am kidding if it wasn't obvious)",opinion,"pre-labelled by Claude, not human-checked"
+"For me it just shows that modern math is not that important and mostly ego driven. If it was important, mathematicians would cherish the progress. I can't imagine bio researchers get mad that AI cured cancer.",opinion,"pre-labelled by Claude, not human-checked"
+"Is Terence Tao just another AI booster nowadays, by the sheer amount of PR generating posts? Reading HN one might think that there is only a single mathematician in the world left.
+
+Case in point: https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=Terence%20Tao&sort=byDate&type=story",evidence,"pre-labelled by Claude, not human-checked"
+Anyone without a big C in their job title will be on war footing soon enough.,opinion,"pre-labelled by Claude, not human-checked"
+"I do believe after the initial shock mathematicians will be able to use their math knowledge to solve practical problems, instead of lets solve this conjecture, prove this age old math riddle, how the pattern is possible. They may have some uses in fringe areas, but it doesn't seem all that useful. These guys are obvious quite brilliant, so when they combine it with other fields which they can branch to due to LLM's, they can still stay relevant.  Ask your software engineer how that went.",opinion,"pre-labelled by Claude, not human-checked"
+"I find it weird to blame OpenAI for using math as a benchmark. If they hadn't done so, then in three months, say, after releasing Bel, someone else would have used math as a benchmark for it (like mathematicians already do since Fable 5 and 5.6 Sol). The result would have been the same (hundreds of open problems solved quickly).",evidence,"pre-labelled by Claude, not human-checked"
+"One aspect that currently frustrates me is that even paying for the highest plans and spending multiple quotas across all flagship models, I still haven’t been able to reproduce any of the amazing feats Anthropic and OpenAI gush about.
+
+I suspect their internal harness, models, and thinking budget far outstrip anything us peasants have access to (never mind the compute). 
+So saying that they achieve all these headline results with 3 hours of GPT Pro is disingenuous. If that were so, hundreds of math phd students would’ve already recognized it.
+
+I’m coming to the realization that my monthly subscription is only helping subsidize their real internal AGI, and my interactions are a small amount of human feedback and creativity which they can strip mine should they choose to.",experience,"pre-labelled by Claude, not human-checked"
+Everyone who built an identity on being the most intelligent in the room is going to have to come to grips with that no longer being a differentiator.,opinion,"pre-labelled by Claude, not human-checked"
+"Same as code, the llm can generate vast amounts and it seems to work, but no one understands the documentation Claude Code, or other LLMs, produce. Essentially, garbage because, to make use of it you need to be able to understand it, usually at a cost (unquantified), and if only LLMs do then what is the point?",opinion,"pre-labelled by Claude, not human-checked"
+"It's a little funny how quickly the conversation goes from ""AI will never be able to {my-field}"" before turning into ""We cannot have AI ruining {my-field} with its obviously superior abilities""
+
+If OpenAI had never made a push to get good at maths, we might still have a sizeable group of peopne stuck at that first line. I say that because I still hear in discussions the naive rebuttal ""But we'll still need _someone_ to {one-step-up-in-hierarchy}"" . Although you have to be curious now how long that sentiment can last.
+
+The good news for those doing abstract maths might be that, now that OpenAI have proven that their AI can do the job in principle, there's probably not much left in it for them to keep going. Mathematicians should know better than anyone the lack of a direct profit motive in doing the work that they do.
+
+(Edited for clarity)",opinion,"pre-labelled by Claude, not human-checked"
+">The lab agreed to sponsor a workshop at the institute for what Dr. Tao said was $60,000 to $70,000
+
+That's a lot less than i expected. The value he gave back to them should be at least 2 magnitudes higher.",evidence,"pre-labelled by Claude, not human-checked"
+"Java also has recursive patterns and (maybe still in preview) literal patterns: `switch (x) { case A(B(true, var c)) -> f(c); }`",evidence,"pre-labelled by Claude, not human-checked"
+"Java continues to try and catch up to Kotlin
+https://kotlinlang.org/docs/sealed-classes.html
+
+I didn't mind Java when the comparisons were to C++, Ruby, and Python. I can not find a reason to go back after Scala (which seemed to fail due to being indiscriminate) and especially Kotlin",opinion,"pre-labelled by Claude, not human-checked; hard case: evidence vs opinion"
+"I love how far Java has come. I still prefer TypeScript since I do a lot of frontend work and prefer to use the same language across the stack.
+
+With the said, you can do exhaustive pattern matching in TypeScript! https://github.com/gvergnaud/ts-pattern",evidence,"pre-labelled by Claude, not human-checked"
+"I don't think you need those switch defaults with the sealed types. I didn't check with a compiler, but I think those are unnecessary.",opinion,"pre-labelled by Claude, not human-checked"
+Took me a while to get used to sealed and I didn't quite see the use. But AI seems to love it for Java so I gave it a go and now I get it. Its like a really good access control mechanism esp if you use DI and want to deprecated some stuff. Apart from ofcourse the pattern matching - which comes in handy for event driven messages where payload shape changes.,experience,"pre-labelled by Claude, not human-checked"
+"He's probably right about this.
+
+I'm not sure that there is a ""One Size Fits All"" software factory out there. I think that they kind of have to grow with your organization.
+
+However, I think being able to build a software factory is probably a very useful skill. And it feels pretty great to just send a list of bullet points over XMPP and  know they'll get integrated overnight.",opinion,"pre-labelled by Claude, not human-checked"
+"Everything is being rethought right now. So many paradigms are broken. 
+There wasn't ever a better time to build a software factory.",opinion,"pre-labelled by Claude, not human-checked"
+This article would work better if it first defined what exactly a software factory is.,opinion,"pre-labelled by Claude, not human-checked"
+"I've given up on sharing anything I make. Distribution was already hard before LLMs, because the market was so saturated that you needed a big advertising budget or a good pre-existing channel to reach anyone. Now that making things isn't special, you don't even get the small boost of having made anything.
+
+I think about posting a Show HN of something I made, and then think ""everyone will have made ten things before lunch, why would I"", and just never share now.",opinion,"pre-labelled by Claude, not human-checked; hard case: experience vs opinion"
+I guess it depends how you look at it. I agree there's a lot of new products being built that will get zero maintenance. But also think there's some awesome stuff coming out that is changing the name of the game. And that's thanks to personal software factories. I think it's better to see it as a personal software lab rather than a factory.,opinion,"pre-labelled by Claude, not human-checked"
+"Sounds to me like people understand different things under a software factory.
+
+I believe a software factory is just the next step in the mantra everything is code.
+
+One wants to write a feature description and acceptance criteria into the ""box"" as fuzzy and with least details as much as possible.
+
+To enable this, one creates for the factory access to information of the domain, requirements and software stack as required by the environment.
+
+And this one attempts all with tools, documentation and processes optimized for the ai.
+
+All with the goal use less tokens, context and speed up every action taken by an agent as much as possible.
+
+That's why there is a trend to plugin based self evolving harnesses which try to automate this with opionated solutions.
+
+Therefore I don't see a reason why building tools for easier testing and less tokens usage is a waste of time especially because one learns more a more areas in ones work one can automate and because depending on your tool choice it can be done without your input and one misses the chance to experiment if ones input in that regard will improve the factory or not.",opinion,"pre-labelled by Claude, not human-checked"
+"I agree, a lot of people are making software factories that don’t need them.
+
+You need to look at people making software factories that actually need them to get to their end goal.
+
+My personal software factory has been building an open-source Shopify for every vertical and I think it’s immaculate…no bias.",opinion,"pre-labelled by Claude, not human-checked"
+"I think he's right in that the software factory somewhat should emerge. You shouldn't start a project by saying ""well, I first should build a software factory to make this faster"". Start by building the thing by directing an agent. If you find yourself writing the same thing over and over put it into a skill which you should think of and treat as a macro. When you find yourself developing clear patterns what skill gets invoked when it might be time to start a software factory which in essence puts those decisions and relevant informations behind a pretty interface.
+
+My software factory emerged that way and for the 50-70% of simpler tasks I work on this saves me so much time and, more importantly, mental overhead.",experience,"pre-labelled by Claude, not human-checked"
+"Thanks for writing that
+
+What this doesn’t solve is the money problem, which is the incentive to considering the software factory.
+
+All of the examples in the article, like the fruit fly brain or a de-slopped android tv, also do not solve the money problem. they are examples of nontechnical people showing initiative, in the way that the technical person is not, but they are not examples of monetized things that demonstrate either party has solved that for themselves.
+
+Just saying stop doing something while offering no alternative or addressing the reason why the pattern exists wont really provide any introspection
+
+The software factory is still the way out for a software engineer or anybody inspired to produce software slop",opinion,"pre-labelled by Claude, not human-checked"
+"What I'm getting from the contents of the blog post is that there's a constant fight the author has with their audience that I'm summarizing as ""I think your endeavor is foolish and you shouldn't do it, but I'm not your boss so who cares, but it's a bad idea, but it could be useful, but you shouldn't do it"".
+
+I think if you have plans for a software factory (read: some kind of conceptual framework for a loop that turns tasks into code/features), you should try it. My opinion is that even if your implementation is a bust or you never take it past a proof of concept, you've at least done something to inform yourself about what's out there and what you've tried.
+
+Better to have a graveyard of barely started projects that give depth to your knowledge instead of relegating yourself to prompt slavery because [frontier model of the financial quarter] can do Marvel + Bioshock + Ted Lasso + Command and Conquer or whatever horrifying Consumptionslop™ that people like Nikita Bier love so much.",opinion,"pre-labelled by Claude, not human-checked"
+"damn, i just did that for more then a year. all this wasted time, just before i wanted to release it. /s
+
+well, im gonna release it now and see if anybody else wants it.",opinion,"pre-labelled by Claude, not human-checked"
+"> non-devs are applying AI in mind blowing ways and you still haven't built shit.
+
+Excuse you, I am not impressed by non devs vibeslopping things that barely function or are riddled with security vulnerabilities with unreadable code.
+
+I guess we are not the same.",opinion,"pre-labelled by Claude, not human-checked"
+"I think a 'software factory' is an attempt to align development with your own internal mental model. People have got a sniff of being able to have magic powers, where their thoughts can align 1:1 with some type of output.
+
+If you try and one shot stuff, you're going to get a smell of the LLM, but if you build an entire ecosystem of development, it's going to be something a little more unique to know you are and what you know.
+
+I think we're going to see some huge changes in language, in how we learn, present, build and design things. As these millions of 'software factories' start maturing and competing, we're going to see some interesting standardisations win out.
+
+It should be applauded that people want to push capabilties of their new toys to the max. I wonder if some people are also scared about the golden age of LLMs coming to an end soon, and want to dig a huge moat ASAP, too... The more you can get deterministic tools and frameworks up and running, the less at mercy you're going to be in the future to huge AI companies.",opinion,"pre-labelled by Claude, not human-checked"
+"Its pretty easy to put together a microservice framework, along with some API spec driven tools to generate android and iOS clients then just work on UI.
+
+I dont think the author is right to say it because of all the vibe coding that this is pointless.
+
+I think it might be pointless because we are witnessing in essence the destruction of computing itself.  And writing code with or without AI will eitehr not be possible (hardware unavailable) or become so unsavory and unenjoyable (jobs nobody wants) that computing for any reason but subsistence (or world domination) will die.
+
+Its even conceivable that the platforms LLMs generate all this code for (the web, mobile, desktop) will die.",opinion,"pre-labelled by Claude, not human-checked"
+"I don’t know…
+
+I’m really enjoying the software factories that I’ve built lately.
+
+You can tell me they’re a waste of time, but man are they ever good at what I need them for.
+
+And it’s keeping all my code standardized, and all my repositories running the same way… I’m really enjoying working with them.
+
+Without them, AI just sort of solves the problem anyway it wants to in any given moment. Things get really chaotic.
+
+I basically just use them to enforce standards and consistency between similar projects.",experience,"pre-labelled by Claude, not human-checked"
+"The author is wrong, and a software factory isn't a distraction.
+
+People are thinking about this from a quantity angle, but the key is quality, and achieving a self-maintaining project at home. I built a distributed trading system that runs multiple strategies in US options and MUST be correct. So my goal wasn't to build huge quantities of software and pump out garbage, but to ensure correct behavior and proper fixes in the codebase with agents.
+
+Open sourced my methodology:
+https://github.com/pullboard-dev/pullboard",experience,"pre-labelled by Claude, not human-checked"
+People are building software factories? First I've heard of it. I just build software for my needs and call it a day.,opinion,"pre-labelled by Claude, not human-checked"
+"I don't really understand what the post is about.
+
+I don't think it's natural for a software engineer to want to build a ""software factory"" because I have never heard of anyone doing that. I'm sure it's a thing.
+
+What I see everyone doing is just building software, incorporating their feedback into agents.md, skills, etc, to make their harness better. Is that a factory? Should people not do that?
+
+I still don't really understand.",opinion,"pre-labelled by Claude, not human-checked"
+"Thanks for working on this guys. The current tax code is fairly crazy: you could spend a few million in salaries, sell 200k of software in a year and possibly owe taxes on that. Even if the company would otherwise be shutting down.
+
+The traditional capital asset treatment applied to software leaves a lot to be desired. Some software is a capital asset, but much just isn’t. Or at least should be considered to depreciate rapidly.",evidence,"pre-labelled by Claude, not human-checked"
+"I’m all for reverting that part of the tax code, but only on the condition that it’s inapplicable to H-1B visa or foreign worker salaries/payments, provided that employer pays local taxes in those countries for those roles.
+
+Keep good paying jobs in the USA. If we need immigrant labor, give them Green Cards instead of precarity.",opinion,"pre-labelled by Claude, not human-checked"
+"Interesting that YC is jumping on this tax code thing, but the shitty tax situation for employees trying to hold onto the equity they've earned is just ignored.
+
+The number one problem for startup employees is that the AMT tax makes it impossible to exercise options in a company that is doing well. YC is showing us that they will fight for changes to the tax code when it benefits their bottom line directly, but are silent when it comes to helping startup employees hold onto equity that they have earned.
+
+Think carefully before joining a YC startup as an employee.",opinion,"pre-labelled by Claude, not human-checked"
+"Signed.
+
+That said, here's my perspective on 174 (which should be reverted to full deduction on the year the expense is incurred).
+
+You do not have to amortize 100% of your engineering costs. Not even close.
+
+Here's the key:
+
+  Development costs incurred to remove uncertainty are amortized.  
+  All other costs are deductible during the tax year where they are incurred.
+
+How does this work?
+
+You are going to design a new robot arm.
+
+In January, you spend $100K to ""remove uncertainty"". In rough strokes, this means discovering all the things you don't know and need to know for this robot arm to become a product. This amount will be amortized over five years under 174.
+
+Now, with uncertainty removed, you spend an additional $1.1MM from January until December for engineering implementation. No uncertainty being removed. Just building a product. This is 100% deductible that tax year.
+
+Analogy: You want to build a new brick wall with specific properties. You spend $100K to develop a new type of brick and $1.1MM to build the wall using that brick. The $100K is amortized, the $1.1MM is deductible in one shot.
+
+BTW, at year 6 the amortization schedule reaches steady-state and you are amortizing the full $100K every year. In other words, the impact of 174, if treated intelligently, is the time value of money until steady state is reached for the engineering costs incurred to remove uncertainty.
+
+https://www.law.cornell.edu/cfr/text/26/1.174-2",evidence,"pre-labelled by Claude, not human-checked"
+Somehow I'm not a fan of HN using this community for lobbyism purposes.,opinion,"pre-labelled by Claude, not human-checked"
+"Yes, but with strong exceptions against offshoring software development labor and H-1B abuse.
+
+Both of these problems are rampant. I’ve seen entire shops with underpaid foreign workers and mass layoffs with workers replaced with offshore and nearshore firms.",opinion,"pre-labelled by Claude, not human-checked"
+"This is less on that specific topic and more general:   While I enjoy the hacker news forums a great deal, I've no relationship with YC as an org.  I am not sure that YC has any particular interest in things that might impact me as an individual contributor in an org as much as it impacts them.
+
+Understandably there's an everyone for themselves aspect here, but that makes these kinds of call to actions a bit hollow to me.",opinion,"pre-labelled by Claude, not human-checked"
+"As a business owner, I've been adversely impacted by this.  I still can't wrap my head around how this is legal or sustainable.  If I buy $1MM of plant and equipment, I may not be able to expense it all in year 1, but I can relatively easily get a loan to finance the purchase of such--and manage my cashflows.  The same is not for devs.  I cannot easily get a loan for $1MM in dev salaries.  In my own case, I don't need the loan to pay the salaries.  I need the loan to pay the taxes for the portion of the salaries I cannot deduct as an expense.  It's just insane.",experience,"pre-labelled by Claude, not human-checked"
+"Happy to support this, desperately needs to be changed.",opinion,"pre-labelled by Claude, not human-checked"
+"For folks that don't know the background on this, here's a layperson summary:
+
+- A business is usually taxed on its profits: you deduct your revenue from the cost of producing that revenue, and the delta is what you are taxed on.
+
+- In software businesses, this usually means if you spend $1M in software development to develop a web app, and it makes $1.1M in that year, you'd get taxed on the $100K profits.
+
+- However, a few years ago, the IRS stopped allowing the $1M to be deducted in the year it was incurred. Instead, the $1M was to be amortized over 5 years, so now the business can only count $200K as the deductible expense for that year. So now it's going to be taxed on ""profits"" of $900K. Assuming the tax rate is 20%, that means the business owes $180K in taxes, even though it has a total of $100K in the bank after the actual expenses were paid. So it would have to either borrow to pay taxes or raise venture capital, meaning that VC-funded companies would be advantaged over bootstrapped ones!
+
+- The letter's goal is to bring things back to how they were (and how they are for all other businesses): let businesses deduct their actual expenses from their actual revenue, and tax that actual profit.
+
+I am neither a lawyer nor an accountant, this is just my understanding of this issue.
+
+Edit: Switched the tax rate to 20%. The logic is still the same.",evidence,"pre-labelled by Claude, not human-checked"
+"Signed. As a US-based developer, I fully support restoring the deductibility of software development expenses. This policy change quietly gutted countless startups and engineering teams—it’s long past time we fix it.
+
+Appreciate YC and folks like @itsluther pushing this forward. This isn’t just a tax issue—it’s about keeping innovation and talent thriving in the US. Let’s get it done.",opinion,"pre-labelled by Claude, not human-checked"
+"It’s just a salary expense, where should software come into it?
+
+Eg
+
+1m salary costs
+100k other costs
+1.1m revenue
+0 profit
+0 tax
+
+Anything else doesn’t make sense to me",opinion,"pre-labelled by Claude, not human-checked"
+"What's particularly wild about the choice to tax software development in this way is that it assumes that code is always asset. For companies that are pre product market fit, it's often a liability!",opinion,"pre-labelled by Claude, not human-checked"
+This is where  it's really important to use a bug tracker that can distinguish between bugs/maintenance and feature development.  The former can be deducted but the latter has to be amortized.,evidence,"pre-labelled by Claude, not human-checked"
+"Can someone steelman the positives for me? I don't see how it's anything but pure regulatory capture favoring established tech firms. A small company ramping up revenue simply can't handle this amortization while a large, established company can.
+
+That being said, I do think there's a little sloppiness in what is categorized as ""R&D"" in the software development. Is code maintenance R&D? Bug fixes? Performance improvements? Is it a ""capital asset"" no longer under R&D once it hits production? This aspect has always seemed too gray given how much money is at stake in taxes.
+
+But again, this complexity is an advantage for more established firms with legal departments and the infrastructure in place to document everything in order to handle audits. Which, in my view, is a form of regulatory capture; this presentation of symptoms of regulatory capture is pretty common.
+
+One potential argument I can see is that maybe this balances out since presumably the more established firms would have less ""R&D"" as a fraction of expenses to deduct in the first place?
+
+Edited to fix some typos and clarity.",opinion,"pre-labelled by Claude, not human-checked"
+"This US tax code change directly impacted my small business in a very real way that was directly felt by my household. In the past, it was a big boon for us and helped me afford to pay for some open source work and experimental things that helped our customers in the long run. Now we are back to mostly doing work-for-hire consulting. Even the experimental work I am doing, I am just paying for it and writing it off as typical business expenses. I cannot afford to take the credit because that means no deduction for this year. I don't have the cash in this small business context.",experience,"pre-labelled by Claude, not human-checked"
+"Thank you for helping to tackle this. The silence on this issue for the past few years from smaller software companies and their affiliates was surprising to me. The recent ""time bomb"" article was one of the few media pieces that actually took the time to describe it as anything other than a ""tax cut for huge tech companies"", which was refreshing.
+
+My current favorite theory as to why there hasn't been more of an outcry is that many companies ignored the rule change (either out of ignorance or as an alternative to going out of business), and are forced to remain silent.",opinion,"pre-labelled by Claude, not human-checked"
+"Signing a letter is fine, but will not have the same impact as phone calls made to your representatives.
+
+https://5calls.org/why-calling-works/
+
+You don't need to use that site - the point is that if you want to have the loudest voice, make some calls.",evidence,"pre-labelled by Claude, not human-checked"
+"I'm going to be that guy and just say that one of the many many harmful side effects of income taxes is the kind of social engineering power it gives politicians, who are neither qualified nor properly motivated to make good decisions with such tools.  Income taxes are an unethical pollution to our society and government.",opinion,"pre-labelled by Claude, not human-checked"
+"We need zero interest rates back to actually get this to work, because that means essentially zero risk to any project. even s174 can't do that.",opinion,"pre-labelled by Claude, not human-checked"
+I was under the impression that this was included in the current one big bill and will continue to be included.  It’s not something we would expect to be removed.,opinion,"pre-labelled by Claude, not human-checked"
+"Why is it that tracking expenses as R&D is bad? Where I work, we started tracking our R&D hours compared to other work recently, and an increase in R&D hours has resulted in less tax burden.
+
+Edit: not sure why the downvote, it's an honest question. I'm not arguing anything.",experience,"pre-labelled by Claude, not human-checked"
+"I seem to remember people being broadly in favor of this change at the time it was first proposed because it would elevade software development and create more long-term stability, but in a world where the primary focus is on quarterly funding rounded and acquisitions it obviously skews the numbers and thus the potential founded/early investor upside.
+
+There are two possible motivations for the impending change. One is the argument that deducting 100% of developer labor isn't ideal because developers create IP whose value can compound as an asset, rather than the labor being 'consumed' in production as with manufacturing (where any long-term benefit after the initial sale goes to the consumer). The other is that it's a legislative stick designed to herd a powerful investor/donor lobby into supporting budget legislation in exchange for turning the favorable tax treatment faucet back on.",opinion,"pre-labelled by Claude, not human-checked"
+"> a change to one of our database systems' permissions which caused the database to output multiple entries into a “feature file” used by our Bot Management system ... to keep [that] system up to date with ever changing threats
+
+> The software had a limit on the size of the feature file that was below its doubled size. That caused the software to fail
+
+A configuration error can cause internet-scale outages. What an era we live in
+
+Edit: also, after finishing my reading, I have to express some surprise that this type of error wasn't caught in a staging environment. If the entire error is that ""during migration of ClickHouse nodes, the migration -> query -> configuration file pipeline caused configuration files to become illegally large"", it seems intuitive to me that doing this same migration in staging would have identified this exact error, no?
+
+I'm not big on distributed systems by any means, so maybe I'm overly naive, but frankly posting a faulty Rust code snippet that was unwrapping an error value without checking for the error didn't inspire confidence for me!",evidence,"pre-labelled by Claude, not human-checked"
+"28M 500 errors/sec for several hours from a single provider. Must be a new record.
+
+No other time in history has one single company been responsible for so much commerce and traffic.  I wonder what some outage analogs to the pre-internet ages would be.",evidence,"pre-labelled by Claude, not human-checked"
+"> The change explained above resulted in all users accessing accurate metadata about tables they have access to. Unfortunately, there were assumptions made in the past, that the list of columns returned by a query like this would only include the “default” database:
+
+  SELECT
+  name,
+  type
+  FROM system.columns
+  WHERE
+  table =        'http_requests_features'
+  order by name;
+
+    Note how the query does not filter for the database name. With us gradually rolling out the explicit grants to users of a given ClickHouse cluster, after the change at 11:05 the query above started returning “duplicates” of columns because those were for underlying tables stored in the r0 database.",evidence,"pre-labelled by Claude, not human-checked"
+">  Instead, it was triggered by a change to one of our database systems' permissions which caused the database to output multiple entries into a “feature file” used by our Bot Management system.
+
+And here is the query they used ** (OK, so it's not exactly):
+
+     SELECT * from feature JOIN permissions on feature.feature_type_id = permissions.feature_type_id
+
+someone added a new row to permissions and the JOIN started returning two dupe feature rows for each distinct feature.
+
+** ""here is the query"" is used for dramatic effect.   I have no knowledge of what kind of database they are even using much less queries (but i do have an idea).
+
+more edits:  OK apparently it's described later in the post as a query against clickhouse's table metadata table, and because users were granted access to an additional database that was actually the backing store to the one they normally worked with, some row level security type of thing doubled up the rows.    Not sure why querying system.columns is part of a production level query though, seems overly dynamic.",evidence,"pre-labelled by Claude, not human-checked"
+"As always, kudos for releasing a post mortem in less than 24 hours after the outage, very few tech organisations are capable of doing this.",opinion,"pre-labelled by Claude, not human-checked"
+"Why call .unwrap() in a function which returns Result<_,_>?
+
+For something so critical, why aren't you using lints to identify and ideally deny panic inducing code. This is one of the biggest strengths of using Rust in the first place for this problem domain.",opinion,"pre-labelled by Claude, not human-checked"
+"> work has already begun on how we will harden them against failures like this in the future. In particular we are:
+
+> Hardening ingestion of Cloudflare-generated configuration files in the same way we would for user-generated input
+
+> Enabling more global kill switches for features
+
+> Eliminating the ability for core dumps or other error reports to overwhelm system resources
+
+> Reviewing failure modes for error conditions across all core proxy modules
+
+Absent from this list are canary deployments and incremental or wave-based deployment of configuration files (which are often as dangerous as code changes) across fault isolation boundaries -- assuming CloudFlare has such boundaries at all. How are they going to contain the blast radius in the future?
+
+This is something the industry was supposed to learn from the CrowdStrike incident last year, but it's clear that we still have a long way to go.
+
+Also, enabling global anything (i.e., ""enabling global kill switches for features"") sounds like an incredibly risky idea. One can imagine a bug in a global switch that transforms disabling a feature into disabling an entire system.",evidence,"pre-labelled by Claude, not human-checked"
+"""Throwing us off and making us believe this might have been an attack was another apparent symptom we observed: Cloudflare’s status page went down. The status page is hosted completely off Cloudflare’s infrastructure with no dependencies on Cloudflare. While it turned out to be a coincidence, it led some of the team diagnosing the issue to believe that an attacker may be targeting both our systems as well as our status page.""
+
+Unfortunately they do not share, what caused the status page to went down as well. (Does this happen often? Otherwise a big coincidence it seems)",evidence,"pre-labelled by Claude, not human-checked"
+"Why does cloudflare allow unwraps in their code? I would've assumed they'd have clippy lints stopping that sort of thing. Why not just match with { ok(value) => {}, Err(error) => {} } the function already has a Result type.
+
+At the bare minimum they could've used an expect(""this should never happen, if it does database schema is incorrect"").
+
+The whole point of errors as values is preventing this kind of thing....  It wouldn't have stopped the outage but it would've made it easy to diagnose.
+
+If anyone at cloudflare is here please let me in that codebase :)",opinion,"pre-labelled by Claude, not human-checked"
+Wow. 26M/s 5xx error HTTP status codes over a span of roughly two hours. That's roughly 187 billion HTTP errors that interrupted people (and systems)!,evidence,"pre-labelled by Claude, not human-checked"
+"No publicity is bad publicity.
+
+Best post mortem I've read in a while, this thing will be studied for years.
+
+A bit ironic that their internal FL2 tool is supposed to make Cloudflare ""faster and more secure"" but brought a lot of things down. And yeah, as other have already pointed out, that's a very unsafe use of Rust, should've never made it to production.",opinion,"pre-labelled by Claude, not human-checked"
+"Wow. What a post mortem. 
+Rather than Monday morning quarterbacking how many ways this could have been prevented, I'd love to hear people sound-off on things that unexpectedly broke. I, for one, did not realize logging in to porkbun to edit DNS settings would become impossible with a cloudflare meltdown",experience,"pre-labelled by Claude, not human-checked"
+"This is the multi-million dollar .unwrap() story. In a critical path of infrastructure serving a significant chunk of the internet, calling .unwrap() on a Result means you're saying ""this can never fail, and if it does, crash the thread immediately.""The Rust compiler forced them to acknowledge this could fail (that's what Result is for), but they explicitly chose to panic instead of handle it gracefully. This is textbook ""parse, don't validate"" anti-pattern.
+
+I know, this is ""Monday morning quarterbacking"", but that's what you get for an outage this big that had me tied up for half a day.",opinion,"pre-labelled by Claude, not human-checked; hard case: experience vs opinion"
+"Classic combination of errors:
+
+Having the feature table pivoted (with 200 feature1, feature2, etc columns) meant they had to do meta queries to system.columns to get all the feature columns which made the query sensitive to permissioning changes (especially duplicate databases).
+
+A Crowdstrike style config update that affects all nodes but obviously isn't tested in any QA or staged rollout strategy beforehand (the application panicking straight away with this new file basically proves this).
+
+Finally an error with bot management config files should probably disable bot management vs crash the core proxy.
+
+I'm interested here why they even decided to name Clickhouse as this error could have been caused by any other database. I can see though the replicas updating causing flip / flopping of results would have been really frustrating for incident responders.",evidence,"pre-labelled by Claude, not human-checked"
+I thought it was an internal mess-up. I thought an employee screwed a file up. Old methods are sometimes better than new. AI fails us again!,opinion,"pre-labelled by Claude, not human-checked"
+May I just say that Matthew Prince is the CEO of Cloudflare and a lawyer by training (and a very nice guy overall). The quality of this postmortem is great but the fact that it is from him makes one respect the company even more.,evidence,"pre-labelled by Claude, not human-checked"
+"> thread fl2_worker_thread panicked: called Result::unwrap() on an Err value
+
+I don't use Rust, but a lot of Rust people say if it compiles it runs.
+
+Well Rust won't save you from the usual programming mistake. Not blaming anyone at cloudflare here. I love Cloudflare and the awesome tools they put out.
+
+end of day - let's pick languages | tech because of what we love to do. if you love Rust - pick it all day. I actually wanna try it for industrial robot stuff or small controllers etc.
+
+there's no bad language - just occassional hiccups from us users who use those tools.",opinion,"pre-labelled by Claude, not human-checked"
+"Great write up.
+
+This is the first significant outage that has involved Rust code, and as you can see the .unwrap is known to carry the risk of a panic and should never be used on production code.",opinion,"pre-labelled by Claude, not human-checked"
+"Wow, crazy disproportional drop in the stock price… good buying opportunity for $NET.",opinion,"pre-labelled by Claude, not human-checked"
+"Matt, Looking forward in regaining Elon's and his team trust to use CF again.",opinion,"pre-labelled by Claude, not human-checked"
+"Lots of people here are (perhaps rightfully) pointing to the unwrap() call being an issue. That might be true, but to me the fact that a reasonably ""clean"" panic at a defined line of code was not quickly picked up in any error monitoring system sounds just as important to investigate.
+
+Assuming something similar to Sentry would be in use, it should clearly pick up the many process crashes that start occurring right as the downtime starts. And the well defined clean crashes should in theory also stand out against all the random errors that start occuring all over the system as it begins to go down, precisely because it's always failing at the exact same point.",opinion,"pre-labelled by Claude, not human-checked"
+"Ironically just now I got a Cloudflare ""Error code 524"" page because blog.cloudflare.com was down",experience,"pre-labelled by Claude, not human-checked"
+"People really like to hate on Rust for some reason. This wasn’t a Rust problem, no language would have saved them from this kind of issue. In fact, the compiler would have warned that this was a possible issue.
+
+I get it, don’t pick languages just because they are trendy, but if any company’s use case is a perfect fit for Rust it’s cloudflare.",opinion,"pre-labelled by Claude, not human-checked"
+">Currently that limit is set to 200, well above our current use of ~60 features. Again, the limit exists because for performance reasons we preallocate memory for the features.
+
+So they basically hardcoded something, didn't bother to cover the overflow case with unit tests, didn't have basic error catching that would fallback and send logs/alerts to their internal monitoring system and this is why half of the internet went down?",evidence,"pre-labelled by Claude, not human-checked"
+"""Customers on our old proxy engine, known as FL, did not see errors, but bot scores were not generated correctly, resulting in all traffic receiving a bot score of zero.""
+
+This simply means, the exception handling quality of your new FL2 is non-existent and is not at par / code logic wise similar to FL.
+
+I hope it was not because of AI driven efficiency gains.",evidence,"pre-labelled by Claude, not human-checked"
+"On 18 November 2025 at 11:20 UTC (all times in this blog are UTC), Cloudflare's network began experiencing significant failures
+    As of 17:06 all systems at Cloudflare were functioning as normal
+
+6 hours / 5 years gives ~99.98% uptime.",evidence,"pre-labelled by Claude, not human-checked"
+Genoa was a big leap from Milan. Turin is a huge leap again. AMD really is doing spectacularly well at the moment. Kudos to Lisa Su and the team.,opinion,"pre-labelled by Claude, not human-checked"
+"Still having your own hardware seems so much cheaper. Maybe even just for dev/uat environments?
+
+Every big corporate I have worked at has lower cost of capital than Amazon, and yet they want to move to AWS. I just dont understand it.",opinion,"pre-labelled by Claude, not human-checked"
+"""Unfortunately, the [Hetzner] CPX22is available only in eu-central and ap-southeast, but if that’s OK with you it is the best value and fastest overall.""",evidence,"pre-labelled by Claude, not human-checked"
+"I am still running ROME epyc cpus that I picked up for couple hundred and they're doing great. Power usage is not the best and singlethread is awful (-50%), but multithreaded performance kicks 9950x in the ass at around 90k vs 70k.",experience,"pre-labelled by Claude, not human-checked"
+GCP (near the top) 3 years reserved 16 ARM cores + 120 GB costs + 1TB local SSD costs > $1k/month. It does not even match the specs of a Ryzen AI 395 Framework miniPC that goes for ~$4k AFAIK.,evidence,"pre-labelled by Claude, not human-checked"
+"You can extract a lot of value from bare-metal servers from Hetzner but you need to put some effort initially to get them going. That being said, it is not really that difficult. And, frankly, it a lot more fun.",opinion,"pre-labelled by Claude, not human-checked"
+"You can't compare VPS with VMs from major cloud provider, VPS don't offer anything beside basic compute.
+
+Also virtualization from cloud provider is way better because they have custom hardware and software so you don't suffer from noisy neighbours for example.",opinion,"pre-labelled by Claude, not human-checked"
+"It's ironic to see Oracle as a value play, but you couldn't bank on that indefinitely.",opinion,"pre-labelled by Claude, not human-checked"
+"I just ran some massive tests on our own CI. I use AMD Turin for this on gcp, which was noted as one of the fastest ones in the article.
+
+The most insane part here is that the AMD EPYC 4565p can beat the turin's used on the cloud providers, by as much as 2x in the single core.
+
+Our tests took 2 minutes on GCP, 1 minute flat on the 4565p with its boost to 5.1ghz holding steady vs only 4.1ghz on the gcp ones.
+
+GCP charges $130 a month for 8vcpus. ALSO this is for SPOT that can be killed at any moment.
+
+My 4565p is a $500 cpu... 32 vcpus... racked in a datacenter. The machine cost under 2k.
+
+i am trying hard to convince more people to rack themselves especially for CI actions. The cloud provider charging $130 / mo for 3x less vcpus you break even in a couple months, it doesn't matter if it dies a few months later. On top of that you're getting full dedicated and 2x the perf. Anyways... glad to see I chose the right cpu type for gcloud even though nothing comes close to the cost / perf of self racking",experience,"pre-labelled by Claude, not human-checked"
+tl;dr Hetzner has best performance for the price. But also Hetzner just bumped prices like 30%,evidence,"pre-labelled by Claude, not human-checked"
+"A few comparisons just from a gaming PC with a 9800X3D (8C16T 5.2 Ghz Boost).
+
+7 Zip benchmark
+
+9800X3D  130 GIPs compression, 134 GIPs decompress.
+
+C8A 21577 MIPs (21.5GIPs) compression, 9868 MIPS decompression (9.9GIPs).
+
+Geekbench 5
+
+9800X3D 16975 multithread, 2474 single thread
+
+C8A 4049 multithread, 2240 single thread
+
+A desktop class CPU is definitely quicker single threaded and multithreaded, no surprises there most of these are dual core. The single threaded performance of the C8A is actually pretty good but its also the best of the bunch by a wide margin most of the CPUs are far behind. Memory performance appears to be attrocious all around.",experience,"pre-labelled by Claude, not human-checked; hard case: experience vs evidence"
+The only conclusion you can draw from this is nobody wants to use Oracle and they are trying to buy customers.,opinion,"pre-labelled by Claude, not human-checked"
+"Disclosure: I work on VMs at Google Compute Engine :)
+
+This was a really, really good write-up. I appreciated the breadth of VMs tested and the spread of benchmarks. A few random observations:
+
+1. Turin is a beast.
+
+2. The data on price-performance makes Hetzner look really fantastic, especially for small scale projects where region placement doesn’t matter much and big bursty scaling isn’t required.
+
+3. I think the first ever cloud VM I ever provisioned was on DigitalOcean. I was surprised at how old their fleet was, but I guess they have some limited Emerald Rapids offerings now: https://www.digitalocean.com/blog/introducing-5th-gen-xeon-processors",opinion,"pre-labelled by Claude, not human-checked; hard case: experience vs opinion"
+im glad to see that the 36€ im paying for 250/250 fiber is still competitive in grand scheme of internet,experience,"pre-labelled by Claude, not human-checked"
+Vultr and HostHatch are also worth considering.,opinion,"pre-labelled by Claude, not human-checked"
+the only thing that keeps me from migrating from DO to Hetzner is the lack of monitoring agent on the latter. its really nice to set up some hdd & cpu alerts from within cloud provider control panel directly.,evidence,"pre-labelled by Claude, not human-checked"
+"> The Azure pricing is at least as complex as AWS/GCP, plus the pricing tool seems worse. They also lag behind the other two major providers in CPU releases - Turin and Granite Rapids are still in closed preview at the time of writing this.
+
+Small nitpick, but Turin-based VM's have been available for more than a month now [1], and they are a beast.
+
+[1] - https://techcommunity.microsoft.com/blog/azurecompute/announcing-general-availability-of-azure-daeafasv7-series-vms-based-on-amd-%E2%80%98turi/4488627",evidence,"pre-labelled by Claude, not human-checked"
+"YIL (Yesterday I Learned) about
+Blue Dot
+
+https://tui.bluedot.ink/
+
+a CLI for managing cloud resources that lets you compare prices, apples:apples, AFAICT.
+I haven't tried it yet but its featureset looks pretty great.",opinion,"pre-labelled by Claude, not human-checked"
+"Despite the container support getting most of the attention, I discovered a measurable performance improvement with WSL3 by accident. Luckily I had another machine to upgrade so I ran an AB test comparing WSL 2 to WSL3 .
+
+If you want a real bump in performance, I have a clever trick .  Hardware isn’t cheap these days, so we demand the most of our software.",experience,"pre-labelled by Claude, not human-checked"
+"Great job in benchmarking! I wasn't even aware of the WSLc (WSL3) release. For others, the release info is available here: https://github.com/microsoft/WSL/releases/tag/3.0.1
+
+EDIT: stumbled on the previous HN post here: https://news.ycombinator.com/item?id=49970507",opinion,"pre-labelled by Claude, not human-checked"
+And yet it's still factors faster without a whole Windows around it.,opinion,"pre-labelled by Claude, not human-checked"
+"ok great benchmark! I work with herdr/pi for dev work and need to use a windows machine from my company. WSL currently unfortunately lags so much when typing, not sure why when using herdr... Using powershell, some features are missing, so i can't wait to try WSL3 and hope for improvements.",experience,"pre-labelled by Claude, not human-checked"
+"I find that stuff that it offers over a normal Hyper-V VM is stuff that I don't need, leaky abstractions galore.",opinion,"pre-labelled by Claude, not human-checked"
+"Lot of the WSL2 lag is not the VM itself, it's the 9P file sharing and interop.
+
+I found that seems like anything under /mnt/c goes through 9P",evidence,"pre-labelled by Claude, not human-checked"
+"WSL2 is a different product from WSL1, not a different version.  Is WSL3 now a different version of WSL2 or another separate product?",evidence,"pre-labelled by Claude, not human-checked"
+I jumped ship from Windows a couple of years ago after having used it since the early 90's. One of the primary reasons was how much I had to fight with WSL2 in my day-to-day work. But now it's becoming even more apparent that Microsoft does not care about its operating system. I don't even know what they could do to get me back. Trust continues to be a huge problem in the AI era of Microsoft.,experience,"pre-labelled by Claude, not human-checked"
+WSL is one of the few good ideas Microsoft had in the last ... 5000 years or so.,opinion,"pre-labelled by Claude, not human-checked"
+"I am not sure about WSL in general right now - no matter if WSL3 is more performant.
+
+For me, Claude bypassed my sudo security by executing `wsl.exe -u root`.
+The Claude does not need any sudo password :)",experience,"pre-labelled by Claude, not human-checked"
+"syscall/basic getppid() throughput 1,474,691 ops/s 1,533,399 ops/s +3.98%
+Entry/exit latency 0.6781 µs/op 0.6521 µs/op -3.83%
+sched/pipe 100k process ping-pong 48,445 ops/s 54,589 ops/s +12.68%
+Context switch latency 20.64 µs/op 18.32 µs/op -11.25%
+sched/messaging Hackbench (20 groups, 800 tasks) 14.507 s 13.047 s -10.06%
+mem/memcpy glibc default bandwidth (1GB) 7.84 GB/s 12.64 GB/s +61.35%
+
+This is great, this is some good work. But, like an issue I described before with Linux kernel io-uring[1], this fails to test and demonstrate performance with a healthy server load.
+
+This obviously fails to depict a healthy server load because it's just way too specific.
+
+1.https://news.ycombinator.com/item?id=44604793",evidence,"pre-labelled by Claude, not human-checked"
+Microsoft still refuses to fix the most obvious issue here - Windows should be rebuilt on top of a linux kernel.,opinion,"pre-labelled by Claude, not human-checked"
+"My memory is a bit foggy, but the original WSL promised a much more ambitious integration with Windows, sort of container-like. It had a lot of rough edges when I first tried it, but they promised they'd work on it. That, together with their promise that W10 would be the 'last' Windows and they'd switch to a more OSX-style rolling release model was what pushed me to adopt Windows in ~2016. In the first years of Nadella it really felt like MS would listen to developers. Within less than two years iirc they'd given up on the WSL ambition, with WSL2 being a mere VM with noticeably worse performance for some of my workloads, and completely reneged on their W10 promise, even vowing to make my newly purchased hardware obsolete.
+
+In summary, I really couldn't care less what improvements they make to WSL, and neither should anyone else, imho. If you want Linux, for the love of god just use Linux. Emulation works great the other way round by now.",experience,"pre-labelled by Claude, not human-checked"
+"Interesting, hacker News has truly become the new slashdot :)",opinion,"pre-labelled by Claude, not human-checked"
+"I love WSL, but giving this a major upgrade label (2 to 3) seems a bit of a stretch, at least from the viewpoint of an average dev user.
+
+Perhaps it reflects the amount of work and thought that has gone into it, but I really think the optics are better if the selling points are immediately obvious to the user.
+
+Hopefully some light will be shed in further blogs.",opinion,"pre-labelled by Claude, not human-checked"
+"I moved to Linux from WSL2. It works surprisingly well today as a desktop OS (using it since ~1992 on servers, 20 years of OS Macs before Windows on desktop). And it looks to be perfect for AI - Claude did build and test a noise gate mic pipeline easily because every config is in plain text files.",experience,"pre-labelled by Claude, not human-checked"
+"I moved to Linux 8 months ago because of how crappy windows 11 has become. One of the things I loved about windows was developing on it, WSL2 was great and I loved just having VS Code connect to it and it’s my own little dev box.
+
+I’ve really enjoyed the switch so far, having attempted it a few times in the past and ended up going back to windows (once in 2003, another in 2012). It’s encouraging to see MS continue to get the developer experience right with improvements like this, but unless they make significant improvements to the OS itself, I won’t be going back.",experience,"pre-labelled by Claude, not human-checked"
+"Following some of the comments about switching to linux the big one that enabled it for me is AI. I love to thinker, but sometimes I just want things to work and linux is known for very minor inconveniences that are pain to alter because you have to learn what kind of god forsaken build system the application uses and how it integrates with the desktop environment, but now I can just ask AI and it will be fixed by the time I want to use that feature.
+
+Another big thing is getting lookingglass working. I could not for the life of me figure out what I was doing wrong when I followed the setup guide 1 line at a time, but AI figured out the problem and it it working in 1 hour. And yes it took AI one hour to figure it out so you can assume how long I've sent trying to get this to work.
+
+Now I run a custom kernel with custom KDE and several compiled new packages which would require the effort of a small team, but now it's possible to do with few prompts and it's relatively easy to maintain indefinitely.
+
+Also AI got me off jetbrains onto nvim and I haven't been this happy writing code.",experience,"pre-labelled by Claude, not human-checked"
+"I switched back to Windows after using Linux for years, simply because the promises of better software never emerged. Maybe AI reverse-engineered apps like that Adobe Creative Suite clone in Rust will start to change things, but I don't really want to hang my hat on an app that could go away at a moment's notice.",experience,"pre-labelled by Claude, not human-checked"
+"Ditch Windows. Install Linux. With Claude, your headaches go away.",opinion,"pre-labelled by Claude, not human-checked"
+"I am done with windows. WSL is not good enough and will never be enough, to offset the sheer instability and unpredictability of windows on my machine. Even if it were stable and predictable it would never be as free as in freedom like Linux to do whatever you want with it. Apparently windows problems like randomly failing wifi are rather common on the Lenovo legion 5 laptops from 2021.",experience,"pre-labelled by Claude, not human-checked; hard case: experience vs opinion"
+"for those intrigued by the name: WSL3 is just WSL2 3.0; it's still just Linux under Hyper-V, not a new architecture.",evidence,"pre-labelled by Claude, not human-checked"
+And one update later.. its goone.. wasted.. some jscript horror of add riddled always on game took it and ran with it. Imagine a department winning performance and one department squandering it meet for lunch in ms cafeteria. Akward..,opinion,"pre-labelled by Claude, not human-checked"
+"I just hate the fact that I am to start a new contract at a Windows shop because IT hates Mac. Most people there would want a Mac given the choice, among the other developers, there is also a Linux crew. But no! It dept says no, so they hold the rest of us hostage.
+
+Why are you like this?",experience,"pre-labelled by Claude, not human-checked"
+Could get all the performance back if you just ran Linux natively.,opinion,"pre-labelled by Claude, not human-checked"
+Can we just flag every “omg just switch to linux” post this is supposed to be about WSL not Why Linux Is Great And MS Sux thread 736748166488391,opinion,"pre-labelled by Claude, not human-checked"
+"tl;dr: using outdated benchmarking tools optimized for the latest Intel chips and not the latest AMD chips. GROMACS 2019.3 v. 2019.4, the latter of which is the latest but still came out over a month ago and addressed AMD Zen 2.
+
+Source is still a good read for explanations on why this is impactful.
+
+---
+
+Disclosure: I'm long AMD",evidence,"pre-labelled by Claude, not human-checked"
+I recall a few months ago they released a marketing pack benchmarking themselves against AMD with a small print disclaimer that they hadn't applied the spectre/meltdown fixes.,evidence,"pre-labelled by Claude, not human-checked"
+"Pro tip: generic benchmarks, in general, are misleading.",opinion,"pre-labelled by Claude, not human-checked"
+"Yes, synthetic benchmark results in general are to be taken with a grain of salt, leaving a lot of potential for things like these that can easily produce the result you desire than what really is.. there is a big question of how this translates to what your workload needs/does.
+
+We just bought our first AMD Epyc server for our HPC cluster. I cant wait until next week to test it against our Skylake nodes. 
+1 socket EPYC 16C cpu vs 2X Xeon Skylake. 
+I already have a suite of our internal workloads to hammer them with.. one of them is a key in house software compiled usually with intel compiler and intel mkl for performance reasons. Really curious how it will do with the EPYC cpus.",opinion,"pre-labelled by Claude, not human-checked"
+"Intel has a long history of price gouging coupled with nefarious practices - like this fakery.
+When did they turn to the dark side? 20 years ago it started with their attempts to kill AMD.",opinion,"pre-labelled by Claude, not human-checked"
+"The value proposition with AMD's current offerings is staggering. I didn't know computers would be this good this soon.
+
+The one thing I'm not pleased with is the general poor experience with integrators, on both platforms. Who told them they shouldn't put prices on gigabyte.com? I see the actual price on a distributor's site and I'm nothing but pleased.",opinion,"pre-labelled by Claude, not human-checked"
+"There's often a long lead time between writing up benchmarks/white papers and publication. At my last employer it could take well over a month to let everyone have their 2 cents and get through Legal for approval. This is a long enough interval to explain the old/new GROMACS usage.
+
+As the saying goes, don't attribute to malice that which can be adequately explained by stupidity (including corporate bureaucracy).",experience,"pre-labelled by Claude, not human-checked"
+"I guess this is what Intel has to do at this point. 
+¯\_(ツ)_/¯",opinion,"pre-labelled by Claude, not human-checked"
+"They wouldn't have an answer to AMD untill 2021: https://newsroom.intel.com/news/2019-intel-investor-meeting/#gs.d3i14m
+
+Ps. Long AMD, perfect execution the last two years. It's crazy, even their late firmware fixes improve performance as it had bad press for a moment for false benchmarks advertisement ( it was not false so it seems, the firmware was just not ok yet. Not everything is fully ok now, it's the only minor nitpick as far as I can tell )
+
+And they are only just now starting in the server space and soon the laptop + graphics space. They are going mainstream ( OEM offering is still lacking, Microsoft Surface changed this) AND they still customize their superior offering for big customers.
+
+In the contrary, Intel has a lot of failures the last 2 years. Spectre, meltdown, ... This isn't bad luck anymore, it's more like bad karma if you are religious.
+
+If you think I'm opinionated. Just check /r/AMD vs. /r/Intel . AMD is even suggested in the Intel threat, lol",evidence,"pre-labelled by Claude, not human-checked"
+"The article is more or less BS.
+
+For one, the claim is that Intel misleads intentionally. Given the timeline there's no particular reason to think there is something intentional here. The AMD-optimized version of GROMACS just came out ~5 weeks ago.
+
+Second, while this is misleading in a sense, it's in the way that benchmarks are all generally misleading. By their intrinsic nature they don't tell the whole story. (And of course marketing departments cherry-pick benchmarks to tell the story they want to tell. Also by intrinsic nature.)
+
+BTW, this isn't even all that bad for Intel. The AMD chip might outperform the Intel one, but only if your software has been specifically optimized for it.",evidence,"pre-labelled by Claude, not human-checked"
+"Sky blue, water wet. I have seen this headline written in 1996, 2002, 2006, 2018...",opinion,"pre-labelled by Claude, not human-checked"
+Intel core constantly does this. They play dirty when AMD is consistently kicking their ass,opinion,"pre-labelled by Claude, not human-checked"
+"There are small and middle corporations that don't have people brave enough to choose AMD. I know, I worked at two of them. In there, nobody has the time to think about AMD and to swallow and explain eventual issues that might arise.
+
+And frankly I've never seen AMD trying to reach those people.",experience,"pre-labelled by Claude, not human-checked; hard case: experience vs opinion"
+"gamed benchmarks?
+in other news, ocean is wet.",opinion,"pre-labelled by Claude, not human-checked"
+"Hopefully automatic updates by default gets in there, because no one is going to manually update nay of this",opinion,"pre-labelled by Claude, not human-checked"
+"commitments on this label (including the support period) will be legally enforceable in contract and tort lawsuits and under other laws.
+
+When it comes to U.S. laws that touch technology, enforceability is a mess. Spyware, spam, fraud, misleading labels, etc. are already governed by various state and federal laws, yet enforcement efforts are whack-a-mole at best.
+
+For IoT devices, having the proposed requirements sounds good in theory but I fear it is practically unenforceable, particularly for consumer-grade devices manufactured overseas.
+
+However, if powerful IoT platforms are also tied into the new regs - with Google, Amazon, Apple, Microsoft, PTC, HPE, etc. required to audit supposedly qualified devices and ban those that don't meet the standards, with escalating penalties for failing to do so - that might shift the needle.
+
+My 2 cents.",opinion,"pre-labelled by Claude, not human-checked"
+"How about requiring devices to accept alternate, Free Software firmware, from the upstream provider?
+
+At the very least, it should be possible after some time period of no updates or insecurity, but a blanket requirement is less susceptible to games.
+
+Probably the best thing to happen to wireless routers is OpenWRT and the other descendents of the WRT firmware.",opinion,"pre-labelled by Claude, not human-checked"
+"I guess the one thing I can hope you consider is that not everyone or everything is a for-profit company and you should leave open source and individual human developers out of these coercing regulations and only apply them to incorporated entities that exchange products for money.
+
+The idea of a random human being forced to keep writing software via the threat of being sued is incompatible with human freedom and in that context would be far worse than the problem it ""fixes"".",opinion,"pre-labelled by Claude, not human-checked"
+"Hurrah, more red tape!
+
+Please let customers opt out of your proposed protection, if they want to.
+
+(And it sounds like that's already the status quo. So perhaps you could use your time to figure out where you can cut obsolete and cumbersome regulations instead of adding more mandatory bureaucracy that customers evidently don't want enough to pay for voluntarily?)
+
+There might be an argument to be made about negative externalities.  The economic standard answer is either let the Coase Theorem sort it out, or to tax the externalities.  Not to ban what you don't like.
+
+https://en.wikipedia.org/wiki/Coase_theorem",opinion,"pre-labelled by Claude, not human-checked"
+We’ve seen manufacturers abuse ongoing access to devices to turn off features the device came with at the time of purchase or convert one-time-fee features into subscriptions. One of my concerns is that security updates are strictly defined in a way that prevents this type of regulation from being used as cover for these shenanigans.,opinion,"pre-labelled by Claude, not human-checked"
+"> The FCC recently issued a Notice of Proposed Rulemaking [2] for a cybersecurity labeling program for connected devices.
+
+That appears to me to be the wrong way to go about this, and it has specifically to do with how IoT security is a problem.
+
+The most severe case of IoT security problems we have seen were things like mass botnets, where plenty of devices of the same type were hacked and then used for things like DoS attacks. Notable cases include the DoS attacks against Brian Krebs for some of his reporting.
+
+The important thing to understand here is that the device owner is not the primary victim. That's a third party.
+
+This is not about consumer choice, because consumers by and large do not care, because they are not the people being affected by this. An optional security label tries to adress it as a consumer choice problem, which it isn't.",evidence,"pre-labelled by Claude, not human-checked"
+"I wonder how companies will simultaneously deal with these FCC regulations in the US, and the proposed regulation to not update anything without intelligence approval in the UK.",opinion,"pre-labelled by Claude, not human-checked"
+"Awesome!
+
+Thanks for engaging, where the rubber meets the road!
+
+Hopefully, you are also looking into other venues, as well.
+
+HN has a great group of folks that represent some of the most cutting-edge tech, but IT runs on Java 8[0].
+
+[0] https://news.ycombinator.com/item?id=19877916",opinion,"pre-labelled by Claude, not human-checked"
+"> Accordingly, incorporating our modifications, we propose, for purposes of the IoT labeling program, to define an IoT device as: (1) an Internet-connected device capable of intentionally emitting RF energy that has at least one transducer (sensor or actuator) for interacting directly with the physical world, coupled with (2) at least one network interface (e.g., Wi-Fi, Bluetooth) for interfacing with the digital world. We seek comment on our proposed definition.
+
+I think this definition would apply to stuff like phones and cars, right? If so that's great.",evidence,"pre-labelled by Claude, not human-checked"
+"These rules sound like reasonable steps, upon first reading.  Not sure what the downstream effects might be.
+
+Is there any thought given to cloud based devices becoming paperweight when companies behind them just stop supporting it or turn off the API?  I'd like some ""assurances"" in place that if the company either goes out of business or decides to sunset the service, it would be required to open source (or at least make available for download).  If memory services, that happened to some Nest models a while back.",opinion,"pre-labelled by Claude, not human-checked"
+"FWIW, seeing a security compliance label on an IoT product wouldn't mean anything to me as a consumer. There is no such thing as computer security in 2023, and there are no hints that security will exist at any point on the horizon. Even the biggest names in the field cannot put out secure products. Products from well-meaning manufacturers are going to be absolutely riddled with security problems, and putting a sticker on the box won't change that. It is literally impossible to put out a software product with anything resembling security today. It'd be like putting a ""secure against bricks"" sticker on a window.  Our industry is a joke. Building secure software products can't be done without completely rearchitecting how our industry operates, which isn't going to happen.",opinion,"pre-labelled by Claude, not human-checked"
+"There are too many IoT devices that want my email/phone just to perform what normal devices have been able to do for decades. No, I don’t want to download an app just so I can use my apartment stationary bike. I get enough spam already, and I don’t want to agree to a long terms and conditions just for that. In that case I couldn’t even use the bike at all without creating an account.
+
+I think a lot of places got duped into thinking their internet connected stuff was an upgrade but in my opinion it’s a major downgrade. A device should do what other non-IoT devices do without being online, and internet capabilities should only be a value-add. A toaster should make toast without being online.",experience,"pre-labelled by Claude, not human-checked"
+"A mechanism requiring disclosure of how long security updates are available seems like a great step.
+
+Another great step would be a guarantee of making the firmware Open Source after no more than a certain amount of time, and having that guarantee known at compile time. Effectively, that means the device will always be supportable.",opinion,"pre-labelled by Claude, not human-checked"
+"I don't know who those manufacturers are, but I can guess. One left-field piece of advice I would offer is looking at what they specify for their own offices/HQs.
+
+""Smart"" commercial office space has a bit of a head start in this area, and the specifiers have now had some time to find their feet.
+
+Some prominent IoT device manufacturers have had written into the specifications for their own buildings that, for example, the end user (read: them) shall be able to manage the certificates on the devices, and so on and so forth.
+
+A couple that come to mind would make for nice blueprints for consumer protections if you can cut through the prescriptive talk about preferred tech.",opinion,"pre-labelled by Claude, not human-checked"
+"> Companies may cease supporting a device well before consumers have stopped using it
+
+In which case all information required to create and load custom firmware should be released to the public. This information should be placed in escrow, in case the company ceases to exist. The same rule should apply to backend services, in case of a device being depended on such a service to operate.
+
+> security updates for a reasonable amount of time
+
+Which is 25 year or more for some classes of devices. Phone have already reached a point where they should be required to come with 10 years of security updates. I'd expect light switches to get at the very least 20 years of security updates.
+
+Generally I believe that governments are being WAY to lenient towards manufactures of any type of electronics when it comes to updates. It's bad for security, the environment and the causes consumers to make bad investments. The companies making these devices have long since proven that they DO NOT CARE and shouldn't be trusted to deal with the issues themselves.",opinion,"pre-labelled by Claude, not human-checked; hard case: evidence vs opinion"
+"> I’ve advocated for the FCC to require device manufacturers to support their devices with security updates for a reasonable amount of time [1].
+
+No offense intended, but I would be worried about this more than I would be worried about the current state of the IoT world. A blanket requirement would punish hobbyists and small companies prototyping new technologies. But big players could spend relatively minor technical and legal resources for publishing regular ""security updates"" without trying to find and close the biggest security holes.
+
+I would prefer that FCC works to inform: maintain an up-to-date database of issues (reported by both the manufacturers and by third-parties), impacts and recommended fixes for those that have a fix. My 2c.",opinion,"pre-labelled by Claude, not human-checked"
+"Planned or unplanned obsolescence is good for business. You are proposing regulations counter to that, so should expect counter-pressure, even for IoT makers that want to do the right thing.
+
+By volume and impact, what devices have IoT vulnerabilities? If from large mfrs, you might expect some measure of support as that would be somewhat in their best interest, if only to preserve their brand image. My concern would be low quality, usually cheaper, whack-a-mole mfrs that come and go on Amazon, eBay, etc. Even if they release a product that would fall under these guidelines, how are you going to go after a ghost?
+
+Also, what happens when an IoT mfr is acquired, does the acquirer assume all the IoT risks as well?",opinion,"pre-labelled by Claude, not human-checked"
+"While the IoT security situation is out of control I doubt that regulating security updates will have any other result than radically reducing competition and innovation in the space by making it impossible to operate as a small company. It will simply push more hardware innovation out to China.
+
+Having worked in the space I came to the conclusion the only viable secure future is to adopt star topology local networks where local traffic for all devices goes into a single secure regularly updated broker device that then decides what to do with it. Any access out to the Internet or between devices needs to be mediated. The part that will annoy a lot of people is that broker device probably needs to be able to read all of it.  Therefore rather than just regulation I would talk to the WiFi alliance in particular about possibly expanding the scope of what it means to be a WiFi router.
+
+The problem is actors like Google really want such a thing to be just in the cloud ""for convenience"", by which they mean monitoring everything that ever happens.
+
+The only corporate actors I encountered that understood this were the Taiwanese OEMs, who are remarkably on point and blunt behind closed doors, but they are basically powerless to do anything about it.
+
+Edit to add: if there is one thing the FCC could do immediately it would be to ban the covert deployment of cellular modems in other devices and to force giant warning labels for such things and require they be user removable.",experience,"pre-labelled by Claude, not human-checked"
+"Thank so much for posting this here first of all! I agree with other comments that rather than, or in addition to, some direct required period for security updates I'd really like to see a dynamic setup along the lines of ""Power Means Responsibility"": manufacturers can stop supporting devices when they wish, but must at that time release all keys and IP licensing needed for hardware owners to take over. If a company wants to keep supporting something, and in turn keep their power over deciding how it works, for 10 years that's fine. If they want to drop it after 6 months and make the firmware fully source available and allow owners to add their own root keys to devices that'd be fine too. Or someone could offer something fully open source with no strings attached but also no responsibility attached. The market can fill with a range of decent options.
+
+But manufacturers shouldn't be allowed to have it both ways, with control post-sale over their customers' hardware AND no responsibility to support it. It should be directly linked by law.",opinion,"pre-labelled by Claude, not human-checked"
+"Many of these devices are made in China, even if designed and sold by American companies. Nearly all contain Chinese made parts. These are network devices with sensors and various behaviors. Given the tension between USA and China, especially in the cybersecurity realm - what about making the case based on US national security (in addition to consumer protection)?",evidence,"pre-labelled by Claude, not human-checked"
+"There’s some great recommendations in this thread but I just want to thank you for engaging with this community to solicit opinions from the trenches.
+
+This is really meaningful to most of us who see the regulations in our lives as something far away that we can’t influence.
+
+Another reminder for everyone that while you likely can’t influence something like a presidential election on your own, you can influence many other spheres with your knowledge and time that are closer to home and probably affect you more immediately.",opinion,"pre-labelled by Claude, not human-checked"
+"Well, if you found a job that required a lot of repetitive manual tasks and you could write a little program or script and automate it (and not tell the company that you did so) you would suddenly find yourself with a lot of free time...",opinion,"pre-labelled by Claude, not human-checked"
+"I don't think it's necessarily a bad thing. I've actually tried to hire dispassionate people before.
+
+One was an assembly line style UI job with no future - the API was solid, the UI was designed by someone else. It just needed someone who could glue the parts, and repeat the same job forever, with minor API updates every now and then.
+
+Another was a teaching job. Beginner HTML/CSS/Node.js. Come in 35 hours a week, actual necessary work is 12 hours/week. It's probably a dead end job, but it's a cash cow. Some graduates managed to go from becoming Uber drivers to junior developers who made the same salary with little manual labor, so the job brought benefit to society.
+
+There's too many passionate people in the industry who just won't take these kinds of jobs.",experience,"pre-labelled by Claude, not human-checked"
+"Not directly answering your question, but you might want to look into FIRE (Financial Independence, Retire Early). The subreddits /r/FIRE, /r/leanFIRE, and /r/fatFIRE are full of excellent info and active communities of people who have either achieved or are working to achieve exactly what you are hoping to do.",opinion,"pre-labelled by Claude, not human-checked"
+"There is nothing inherently wrong with wanting to focus on hobbies/life and not caring much about working time job - I would guess most people fall on this side, actually (and they don't even have too much of hobbies either). However, the way you wrote this post, it strucks me that maybe you have burnout, or you're depressed - as if you reach out to your passions not mainly because you like them, but because those never failed you, and you want to get away from everything else, in which you were disappointed.
+
+If this is not the case, just ignore this, but please think about it first. The world can be a great place with the right view, and there is a lot that can bring you back on track - including an inspiring daytime job.",opinion,"pre-labelled by Claude, not human-checked"
+"This is an awesome question. I hope someone has good strategies for you. Life should be spent doing the things you find worthwhile, and the fact is, not all of those things are monetizable.
+
+Given how esteem- and success driven HN as a platform is... you might not get too many ideas since I suppose people want to maintain their ""hireable"" status.
+
+Success and ""loving your job"" are more or less empty phrases unless you are actually a professional moving your field forward or learning a highly complex subject matter - or you own a stake in a company.
+
+Beyond that you are toiling, and if you like your job, it's glorious toiling like gardening (pleasing, but not important, but you love it, so it's great) or terrible toiling for living that eats your soul.
+
+I'm basically in a job that is quite important for my org, I get compliments for good job, but I hate most aspects of my daily work since the tech stack is complex and fugly. I probably _appear_ motivated but I'm just a neurotic who hates failing. If I didn't need to feed and house my family I would have moved to a lower paying position long ago that is intrinsically more motivating.
+
+Success and ""loving your job"" have nothing in common in my experience.",experience,"pre-labelled by Claude, not human-checked"
+"> The software I build is useless.
+
+Isn't this up to you?",opinion,"pre-labelled by Claude, not human-checked"
+"> devops/sysadmin
+
+While these certainly exist, you would need to know what your doing to not need to do much.
+
+And almost impossible to be remote.",opinion,"pre-labelled by Claude, not human-checked"
+"You can do all of this and earn a high salary if you become an...
+
+...agile coach
+
+Read a few books, recycle stuff you find online, do a presentation on neurodiversity. It really is money for old rope. I knew of one who worked in a UK gov department who got £1250 a day, charged for 5 days, and only turned up for 4.5. Did it for years.",experience,"pre-labelled by Claude, not human-checked"
+"I know right now you want to focus on your hobbies/passion and you don't need much and you don't care about anything else... I don't know what age are you but I would suggest that, while try to enjoy your hobbies/passion as much as you can, think and plan for the future, and what a dire situation you would find yourself if you're in a low paying dead end job for 10 or 20 years... You'd be basically digging a hole for yourself that would be difficult to get out.",opinion,"pre-labelled by Claude, not human-checked"
+An inhouse DBA (preferably something like SQL Server as it's quite straightforward). Get it set up/automated (back-ups etc) then the a good indicator that you are doing well is if you've nothing much to do.,opinion,"pre-labelled by Claude, not human-checked"
+"Well I up voted because I look into FIRE and retire as early as possible.
+
+One way is to get highly paid job as early as possible and invest most of the income.
+
+What OP describes might be different approach, get easy going job and well not really retire but have a lifestyle that would be like a retiree.
+
+Both have their ups and downs. I would rather go with first solution if I were young and have opportunity. Second option is more viable if someone is in his 40ties I believe.",opinion,"pre-labelled by Claude, not human-checked"
+"I think it's probably fairly random. I.e. you're just as likely to have a ""do nothing"" job in a FAANG as in some other random corps. But I don't think you can start doing nothing right after being hired - usually people are hired because there's more work in a team that the existing headcount can handle. So, you have to work for some time and then count on ""falling into the cracks"" - landing in a place where there's less work than people capable of doing it.
+
+BTW I recommend against startups (pre big funding). In startups, the owners watch costs like hawks and there's zero chance of slacking off.
+
+BTW2: if you're good with people, I recommend a Scrum master role. From my observations over the years, these folks have almost zero workload and absolutely zero responsibility for anything. It's slacker's paradise - you just have to be comfortable with babbling on meetings/calls for the majority of the day.",opinion,"pre-labelled by Claude, not human-checked"
+My ex-roommate works at Google and this was her approach to work even pre-pandemic.,opinion,"pre-labelled by Claude, not human-checked"
+"Totally reasonable thing to want IMO.
+
+Try searching for stuff to do with managing ETL/integrations. Some of these jobs will require loads of product involvement, others will be some not terribly interesting data munging. At your target salary level which you mentioned elsewhere (30k EUR), there should be plenty of positions where you'll exceed expectations with 2 hours of focused, intelligent work per day. Not sure how many will be remote though, sorry!",opinion,"pre-labelled by Claude, not human-checked"
+"One of the things that springs to mind is coding emails.
+Once you have a template that works in 99% of email readers you've done the majority of the work.
+
+The downside is getting clients that need emails coded. This means you need to do some work to connect with people and get the ball rolling.
+
+I used to do this kind of thing many years ago for an advertising agency/publishing house. They had 5 magazine brands they ran and each of them would need a bi-weekly email to be sent to their newsletter subscribers.
+Their designer would send through a psd, I'd code it up and load it into their mailing list software.
+
+At the same time I was doing wordpress based ""catalog"" websites for them, also minimal interfacing with the client and the same ""psd => html"" workflow.
+
+If you can get the energy to talk to an advertising agency or publishing house there may be something minimal that you can do for them.",experience,"pre-labelled by Claude, not human-checked"
+"Hey, at least you're honest.
+
+Is the problem that your work has no meaning? There are plenty of nonprofits that are slugging away using inefficient processes that could benefit from a developer that makes them custom software. Maybe there's one out there that aligns with your hobbies?",opinion,"pre-labelled by Claude, not human-checked"
+"I would suggest looking for work in hospital IT. The glacial pace of change, entrenched legacy technologies and byzantine bureaucracy should provide the kind of environment you are looking for.",opinion,"pre-labelled by Claude, not human-checked"
+"State government or a bank although at a bank, while you don't have a lot of work, your monitor is usually public facing.",opinion,"pre-labelled by Claude, not human-checked"
+"You haven’t stated your nationality (or country of residence) so this advice may or may not work out for you.
+
+Lot of European software companies fall in this category. Not necessarily low expectations but you are expected to work only during business hours and the work is typical CRUD app development/maintenance. The projects are managed well so no crazy fire fighting to meet super tight deadlines. On top of that if you can get into shops that work on governmental IT/automation work then nothing like it. Very decent job security, sane vacation policy are added bonus.
+
+Some of those EU shops may even be willing to take on full remote employees.
+
+Good luck!",opinion,"pre-labelled by Claude, not human-checked"
+"Business are often happy to pay a high effective hourly rate. Consulting is easier than rank and file employment, but you seem to also want job security and predictability.
+
+“Get away with” however indicates you want a “do nothing job”:
+
+Option 1: where the manager doesn’t know/care upfront how little you work. That’s a game of exploring information asymmetries. I’d look for inexperienced managers, people hiring for jobs they have little knowledge about. That’s more important than the actual job description. You can prey on business leaders that are in over their head or have too much capital for their own good. But you’d have to beware so the business itself isn’t too risky, lest you spend all your time job hunting.
+
+Option 2: where the manager can’t fire you even if they want to. Where I live some of that comes automatically with seniority. Joining a union can help as well. Or else playing politics: making the right friends and gathering dirt on them. After attaining the position, incompetence is your friend. Make a point of fucking things up (on purpose) until your responsibilities get taken away.
+
+Option 3: I don’t have anything personally against your position. I’d recommend soul searching just how far you want to stretch it: if it’s okay to trick your employer out of a salary, you might take it a notch further and find a well paying career in outright fraud. I bet ethics are a barrier to entry in many gray area careers.",opinion,"pre-labelled by Claude, not human-checked"
+"I don't know about putting in the least amount of effort for 5 days a week. But what I do know is that in my country, the Netherlands, part-time work is more and more becoming the standard. Already, 75% of women and 30% of men work 32 hours a week or less. In many sectors the fulltime standard has been lowered to 36 hours, which means every other Friday off.
+
+I myself started on 40 and will move to 32 hours somewhere next year. It's your right by law to reduce your hours for the same pay/hour.
+
+So my advice would be to look for remote only dev jobs in the Netherlands, and just ask to work 24h or 32h a week. It's very common here and won't be a roadblock.
+
+Although this is going to entirely depend on how much money you actually need to get by.",evidence,"pre-labelled by Claude, not human-checked; hard case: experience vs evidence"
+"I build a website that helps people navigate life in Germany. It requires little work and pays the bills. I still have to work, but if it's sunny outside, I am rarely stuck behind the keyboard.
+
+Unfortunately, I don't think I could easily reproduce. I wouldn't have the energy to do the same in a new location. Even in my little circle, I have many competitors, though they are fortunately not that good. If there was an easy recipe, everyone would do it.
+
+I guess the general idea is to build something that decouples payout from income, and avoid obligations that force you to work on a fixed schedule. It's important to me to be able to let the website run itself for a week or two.",experience,"pre-labelled by Claude, not human-checked"
+"I am a highly paid consultant in cryptocurrency infrastructure systems, and I use my rates (both hourly and flat) to work less, not more. So sometimes I can earn a lot of money for a few hours of work, but it is not boring. It is stimulating and requires a lot of thinking, as I specialize in a particularly rare niche. Though it generates a lot of stress when there are no clients for long periods of time.
+
+For the rest of it, I work in the academia, where the money is nearly nonexistent, but it helps me for my freedom of self-actualization (and since it is computational epidemiology, there is suddenly a lot of real world relevance). Still, event when there are no clients for months, the money from the academia is enough to survive (barely).",experience,"pre-labelled by Claude, not human-checked"
+Wordpress. There are a million companies selling a plugin or theme and they all hire developers. The tech level required is usually pretty low.,opinion,"pre-labelled by Claude, not human-checked"
+Be a QA engineer! Such a waste of time hehe (in my experience),opinion,"pre-labelled by Claude, not human-checked"
+"Just think.  If your ability to get good quality health insurance/coverage wasn’t directly tied to having to be employed for those benefits, we all could pursue our passions and desires.",opinion,"pre-labelled by Claude, not human-checked"
+3blue1brown has the absolute most educational and entertaining videos. Always fascinated by his animations which are custom programmed by him. I also appreciate the diversity of topics covered from deep math to software to science.,opinion,"pre-labelled by Claude, not human-checked"
+"Too early to tell, but IMO unlikely. Let's see what his take will be once an AI can propose a topic, write the script, animate, and narrate a good educational math video.",opinion,"pre-labelled by Claude, not human-checked"
+"In other news, there's never been a better time to be a software developer. Come to think of it, there's also never been a better time to invest in learning copy-editing and proof-reading as a side hustle. It's a Brave New World. Everything is fine, the demand just got expanded, the pie got bigger, nothing more. New doors will be opened, nothing has changed; in fact, everything improved. Stochastic parrots are no match for our carbon-based g.",opinion,"pre-labelled by Claude, not human-checked"
+"I actually remember that in an old interview (that I can't find sorry) Grant Sanderson said he moved in to YouTube because he thought it was a more promising career than being mathematician, it's interesting to see his opinion change.",evidence,"pre-labelled by Claude, not human-checked; hard case: evidence vs opinion"
+"About a year ago I wrote something similar about software, ""Now might be the best time to learn software development"": https://news.ycombinator.com/item?id=44299979
+
+Reflecting on that a year later is interesting. Agents have become REALLY good since then, and I consider the ""writing code"" side of my profession to be largely annihilated. Some days that's really hard to accept.
+
+But I think Grant's conclusion about math still largely echoes what I wrote about software: don't underestimate the social aspect of these activities, and if anything AI has made the social side more important. I deliberately avoided declaring, ""now is the best time to learn to write code"". I suspected that skill might be going out the window. But learning systems thinking and the social skills needed to connect people's dreams to reality continues to be an important art, an art I still have the privilege to practice every day.
+
+And if we do reach the ""anything you can do I can do better"" stage, then, as Grant said, that's a hard to imagine world, and one where ""it can write really good code"" might be the least of our problems.",experience,"pre-labelled by Claude, not human-checked"
+"This may be true for math educators, but not so much for math researchers.",opinion,"pre-labelled by Claude, not human-checked"
+I respect Grant for doing things his way and in this video making an earnest attempt to analyse the situation from many perspectives. Well done.,opinion,"pre-labelled by Claude, not human-checked"
+"This is the same naivete that I saw in coding some time ago before most people finally accepted there is no going back and the times of writing code by hand are gone.
+
+And the guy is not a mathematician primarily - he's a Youtube creator and entrepreneur. I liked a lot of his videos but now I usually just ask the LLM for detailed explanation and I can probe it as much as I want if something is not clear enough.
+
+Education will also take a huge hit, you can't really beat an almost free supergenius that has all the time in the world to explain something to you in as much detail as you wish.",opinion,"pre-labelled by Claude, not human-checked"
+"denial, anger, bargaining, depression, and acceptance",opinion,"pre-labelled by Claude, not human-checked"
+"I think a lot of these reactions by mathematicians are more akin to group theory than anything else.    Reality is that things will naturally sort themselves out and there will be some role mathematicians play in all of it (most likely).   To me it seems the timeline that some skill essentially gets retired such that if you want to keep doing it is more like ""historical re-enactment"" is getting quite short.  Things like manually coding something is going to be a hobby.  Some aspects of math are going to be a hobby, and professional math will be all about pushing up against the edge of what we can do mathematically with AI.",opinion,"pre-labelled by Claude, not human-checked"
+"I'd like to believe Grant but I find this assault on mathematics to be dehumanizing and demoralizing.  AI has destroyed a major source of ""life's meaning"" for many people who pursued mathematics. Imagine waking up one morning to find that an alien technology has solved the problem you had dedicated your life to (and many more to boot.) Not another mathematician but an alien technology. As a scientist, I don't want to end up as a laboratory assistant to an AI. I can take not being the smartest human in the room, but I'm pretty sure I don't want to spend my life serving a silicon master.",opinion,"pre-labelled by Claude, not human-checked"
+People with money will have questions and people or machines will need to give answers to satisfy them.,opinion,"pre-labelled by Claude, not human-checked"
+"The award for most cope of 2026 goes to...
+
+There's never been a better time to be a professional mathematician, perhaps. Just like there's never been a better time to be a senior software engineer.
+
+An 18 year old entering university today will retire somewhere in the 2070s. Is mathematics, or software engineering, a promising career path for the next 50 years? No, it's most certainly not, and anyone suggesting otherwise is delusional. I don't know what would be a good career path, but most certainly avoid anything that AI is having the most success at in 2026.",opinion,"pre-labelled by Claude, not human-checked"
+"I think a lot of ""mathematicians"" are saddened by the sudden realization they are not even interested in it and were only in it for status and prestige. A lot of them are such pretentious tools that they willingly wasted their lives doing the absurd PhD rituals. Academia is dead.",opinion,"pre-labelled by Claude, not human-checked"
+"I think math will go the way of biology. Biologists enjoy untangling the infinitely complex mechanisms of life, including the brain, and win Nobel Prizes for discoveries like ""how water enters a cell,"" rather than ""constructing the first-ever cell capable of absorbing water.""
+
+No biologist has ever complained, ""Gee whiz, it's so unfortunate that we already have a brain to study. It's all so meaningless! It would be so much better if we had to construct the first-ever brain from scratch.""",opinion,"pre-labelled by Claude, not human-checked"
+"Ai will yield a higher demand for mathematicians, we need more people to understand the math being solved. We also need more people inventing math problems.
+
+People who want to solve problems themselves should go on to invent them without posting them on the internet until they're solved.",opinion,"pre-labelled by Claude, not human-checked"
+"I started grad school at math in Sept. 1995 and:
+
+""There's never been a better time to go into math"" was the final statement of the ten minute orientation session from the Dep Chairman.
+
+It was a great thing to do anyway.
+
+Then.",experience,"pre-labelled by Claude, not human-checked"
+"Problem solving, critical thought, logic, creativity are always going to be valuable.
+
+In a way ai is turning programming more into maths - you write a natural language description of the problem  - a proof / program - and then translating that into machine code is a lot of work / abstraction. For example look how much it takes to turn relatively simple mathematical statements into lean. That I guess is going to be the future.
+
+I would encourage everyone to learn the fundamentals still because you will need discretion and to be able to think at a more abstract level.
+
+However its funny that its only NOW dehumanising/demoralising now when its white people losing jobs to the capitalist machine in the imperial core, and not the slave silicon miners making gpus for gamers.",opinion,"pre-labelled by Claude, not human-checked"
+"I think two things are being conflated: whether math will continue to offer exciting opportunities, and whether it will remain fulfilling for those who love doing it today.
+
+Grant is right about the former. But that doesn't address the latter. A field can have a bright future while losing what drew people to it.",opinion,"pre-labelled by Claude, not human-checked"
+"May I ask what the motivation behind KilllSwitch is? Out of curiosity, I decided to test your claims and asked Claude to build a program in Go and Claude Skill that is able to decompile (from) and compile (to) KS programs along with a Claude Skill that doesn't trip it up. It all works™ -- All your example programs.
+
+So, whilst I _think_ you've built a very clever interpreter, I don't think you can get around the fact that someone (like me) could just build around the noise you've created anyway.
+
+Right?",experience,"pre-labelled by Claude, not human-checked"
+"I wonder if another approach would be to map the language syntax onto some banned/censored LLM topic(s) such that programs end up as ""readable"" instructions for topics the LLM refuses to read and/or write, like producing napalm, nukes, bioweapons, etc. Doesn't have to be factually correct instructions, the terminology itself is enough to shortcircuit most LLMs.
+
+(Inspired by recent malware including bioweapon instructions in the source code as a way to shut down LLM-based analysis.)",opinion,"pre-labelled by Claude, not human-checked"
+"Security by obscurity is not security at all.
+
+You're attempting to use a few little gotchas against LLMs that only make sense if you're looking at it one dimensionally as a standard execution flow. AI is not limited by that. Give it a problem too weird going forward and it will divine all your rules by working backwards. Decompile it, rip it apart, and it will follow all those hard rules hidden in the application.
+
+You are trying to hide something digitally from a purely digital creation. This is not a recipe for success.",opinion,"pre-labelled by Claude, not human-checked"
+"Interesting, reminds me of the Stroop test where people have to say what color a word is written in, except the word is ""red"" and the color is blue.
+
+I wonder if a sufficiently smart LLM would recognize the difficulty and build a preprocessor that would let it mostly work in a normal syntax.",opinion,"pre-labelled by Claude, not human-checked"
+"Now that it has a nice webpage the describes the obfuscation technics, it is basically cracked at this point to next-gen models.",opinion,"pre-labelled by Claude, not human-checked"
+"""Writing code is probably something LLMs have excelled at the most. But how much of their ability to write code is due to their understanding of it vs. just them recalling code snippets which were present in their training dataset or their context window?""
+
+This makes me think mostly about how humans work.
+
+Programming is to humans like speaking a language. You have ideas for what to achieve and express, and if you are a proficient programmer then outputting those thoughts in a programming language is second nature.
+
+Programming (like most things humans learn) takes practice. It is NOT enough to simply read a specification and then you know how to code (except for transferring skills between similar languages). You repeat, make mistakes, and learn from them.
+
+I would be tempted to say that humans definitely ""repeat snippets from their training dataset"". We mainly recall and express from our training/experiences. Creativity is mostly recombination of things already seen.",opinion,"pre-labelled by Claude, not human-checked"
+"Related: the Darmok programming language: https://github.com/kevinselwyn/darmok
+
+  Temba, his arms wide stdio
+  
+  Darmok on the ocean
+      Kira at Bashi ""Hello, World!\n""
+
+      Darmok and Jalad at Tanagra 0
+  Darmok and Jalad on the ocean
+
+Killswitch-lang could become the backstory to how the Tamarians developed their language, in the aftermath of a Dune-like Butlerian Jihad. Also see: https://news.ycombinator.com/item?id=50127274",opinion,"pre-labelled by Claude, not human-checked"
+If found that stack languages are a massive weak spot for LLMs. It requires accurate tracking of what is on the stack and for some reason that doesn't really work. So even the best models end up making the same basic mistakes over and over again.,experience,"pre-labelled by Claude, not human-checked"
+"Although I haven't tested it, I came up with an obfuscation technique that makes code readable to humans but confusing to LLMs.
+
+Basically you can write code inside the function in any order, my parser basically does data dependency analysis and re-orders it.
+
+https://github.com/xyzzyapps/weft",opinion,"pre-labelled by Claude, not human-checked"
+"This is not ""a programming language that LLMs can't use"", it's ""a programming language that's adversarial to LLMs that haven't been trained how to use it"".
+
+I was hoping for something like a language with properties that change/morph as it functions, that make an LLM unable to use it by not having a means to track and continuously reference the changing cipher/state or something.",opinion,"pre-labelled by Claude, not human-checked"
+"I found that models without ""reasoning"" were quite bad at writing code in my programming language bruijn [0], whereas for humans it is entirely possible to get used to writing de Bruijn indices instead of variables. The recent ""reasoning"" models just write the code in different languages and write a small translating engine to bruijn, such that it bypasses the parts it struggles with (counting abstractions).
+
+[0]: https://bruijn.marvinborner.de/",experience,"pre-labelled by Claude, not human-checked"
+"> Claude’s Opus performs best, though it’s not Opus 5.5 but rather Opus 5 which does so. The difference doesn’t appear to be pure chance, Opus 5 is better at interpreting the spec. Some models like Fable 5.1 and Gemini 4 Argon do poorly due to their overly sensitive safety guardrails. The best open-weight model is MiMo-V2.6-Pro.
+
+So the models _can_ use the programming language.
+
+A somewhat flippant reconstruction of this argument is something like,
+
+Can humans code? Or do they just remember the words? I created a programming language called Brainfuck that shows they can't program.
+
+And then reporting results that shows some humans can in fact program in Brainfuck, just kind of poorly.
+
+It's just not very interesting.",evidence,"pre-labelled by Claude, not human-checked"
+"I feel like most things at the Esolang Wiki fit the bill. Chef, Piet, and Befunge are two favorites that spring to mind. This reminds me of Chef in particular.
+
+https://esolangs.org/wiki/Chef
+
+https://esolangs.org/wiki/Befunge
+
+https://esolangs.org/wiki/Piet
+
+Edit: Hmm... I guess probably less usable by humans.",opinion,"pre-labelled by Claude, not human-checked"
+Easier to just have a language where the keywords are slurs,opinion,"pre-labelled by Claude, not human-checked"
+"ask claude to write a simple program in, say, python.  then ask claude to translate that program into BrinFck.",opinion,"pre-labelled by Claude, not human-checked"
+"LLMs can read blog posts though.
+
+Humans are good at smelling things, computers not so much yet. Smells are also not easy to symbolize - what orthographies do we have for scents? I predict a dystopian future where humans need to communicate by smells to bypass AI overlords",opinion,"pre-labelled by Claude, not human-checked"
+"I can't see the hello world, because Cloudflare says I'm not human, as usual.",experience,"pre-labelled by Claude, not human-checked"
+"A LLM could generate a decompiler based on this language's compiler and then generate code that would compile.  It would be obvious slop though.
+
+It might take some effort to train a LLM to the point where it could offer useful feedback on human code written in this language, but I wouldn't consider this to be impossible.",opinion,"pre-labelled by Claude, not human-checked"
+Its cool but also unusable for me as a human. The extra information is hard to ignore. Feels like a brainfuck,opinion,"pre-labelled by Claude, not human-checked"
+Me: Let's make LLMs use that programming language.,opinion,"pre-labelled by Claude, not human-checked"
+"Love the sentiment, I think rather than new labnguages I would like to see forms of obfuscation that cannot be reversed and maybe encryption.
+
+Also I been thinking about how we can (re?)create offline open source or fully obfuscated OSS online that has some kind of tooling to prevent exposure to training.
+
+It would be interesting if there was a metaphor we all understand but we could repurpose for this.  Undoubtedly new CPUs would need to be made.",opinion,"pre-labelled by Claude, not human-checked"
+"If you $LANG has a compiler or grammar checker, then it's a reward that LLM can learn.",opinion,"pre-labelled by Claude, not human-checked"
+"The LLM would just decompile the compiler and write code that matches the implementation.
+
+Especially now that there's a website that explains clearly that the spec is not to be trusted.",opinion,"pre-labelled by Claude, not human-checked"
+"Well that was one of the reasons why i build my own agent/harness - to have actual full observability of what it is doing and why it is doing what it is doing.
+
+Don't really understand why other agents to give those insights but well found my solution.",experience,"pre-labelled by Claude, not human-checked"
+"Yup. Setting up liteLLMProxy on some servers as we speak and will start playing around.
+
+I can't orchestrate agents in sandboxes without it.
+
+1. It can issue virtual keys, so provider API keys never go near the sandbox
+
+2. I can see everything
+
+3. Guardrails
+
+And much more
+
+Looking forward to it.",evidence,"pre-labelled by Claude, not human-checked; hard case: experience vs evidence"
+OpenRouter does all this for you. It's pretty nice. Although for apps I use another server to lock down the requests even more and prevent the client from seeing my API key.,evidence,"pre-labelled by Claude, not human-checked"
+"One man’s fun is another man’s “idk what any of these words mean, I pay $20/mo for some company to abstract this complexity away”
+
+For clarity, I do like blog posts like these.",opinion,"pre-labelled by Claude, not human-checked"
+"Yeah you should run an LLM proxy, but imagine a world where LiteLLM and all the other LLM shovels weren't buggy vibecoded messes. And with the velocity of updates I feel there has to be vulnerabilities there. Or am I just holding it wrong? Anyone got a good alternative?",opinion,"pre-labelled by Claude, not human-checked"
+"I'd love to do something like this, or use API keys, but I still don't understand how people justify the cost of using API keys vs. subscription.
+
+I tested it once, I'm in on the 20x claude max ($200/month) and I either max my weekly limit every week or come really close. But it only took 2-3 days to hit $200 spend with api keys.",experience,"pre-labelled by Claude, not human-checked"
+"> Own your infrastructure
+
+...proceeds to use codex.
+
+With just a 12gb VRAM GPU + 64gb of CPU RAM, and you can actually own your own infrastructure. I can't wait for hardware prices to fall so that becomes even more accessible.",opinion,"pre-labelled by Claude, not human-checked"
+"Tailscale makes Aperture available for free, and while it's not something you own, it is in your tailnet, so at least you have a certain amount of control over how things access it.
+It gives a nice view of what agents are doing, with lots of configurability and extensions, and the team behind it has been updating pretty steadily.
+
+I happen to be working on an extension to Aperture, so I have my own reason to promote it. But I do think it's a nice easy solution, and I promoted it to people before I was extending it.",evidence,"pre-labelled by Claude, not human-checked"
+"This is the best one I found https://github.com/kenn-io/agentsview
+
+It is a not proxy. It can clearly show whats going on across all agents. The proxy's are generally inconvenient and yet another point of failure. I think the author got to the resort option quickly",evidence,"pre-labelled by Claude, not human-checked"
+By running my own agent harness that provides detailed API metrics in the GUI and logs very verbosely.,opinion,"pre-labelled by Claude, not human-checked"
+I like the content but I have to say the Mark Manson writing style is off putting.,opinion,"pre-labelled by Claude, not human-checked"
+"I am boggled how the first step of an llm after you make an orchestrator isn't some kind of proxy that records your personal internet surfing to be used by your personal AI later.  Every college should be running in house AI with their own in house search engines and in house any service. Don't go to any college that wants you to use chatgpt or other corporate nonsense.  If they can't make local LLMs work, they are not a real college.",opinion,"pre-labelled by Claude, not human-checked"
+"Proxies are good if you pay API prices.
+
+For subscriptions, it is easier to collect the JSONL files from ~/.claude/projects/ and similar directories. They are better organized (e.g., subagents) than what the proxy sees.
+
+However, the best value comes from collecting agent sessions across the whole organization. You'll need to scrub credentials and handle security.",evidence,"pre-labelled by Claude, not human-checked"

@@ -42,6 +42,31 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+**Community:** [Hacker News](https://news.ycombinator.com) comment threads.
+Public, no login needed to read, text-only, and spread across many topics
+(tech, business, science, programming languages), so no single show or release
+dominates. Comments range from one-line quips to long first-hand reports.
+
+**Milestone 1 reading notes.** I read 36 top-level comments across four
+front-page threads (a registrar seizing a user's domains, Terry Tao on AI in
+mathematics, Java sealed classes, and an essay on "personal software
+factories"). Candidate distinctions I saw in the text:
+
+1. **Some report something that happened to the writer; most state a general
+   verdict.** "Fully turned off our business domain because we didn't reply to
+   a phishing email in 48 hours" vs. "Namecheap cannot be trusted."
+2. **Some cite a specific, checkable fact (a number, date, link, or named
+   event); most don't.** "purchased by private equity CVC in 2025 for $1.5B"
+   vs. "modern math is not that important and mostly ego driven."
+3. **Some are a one-line quip or verdict with no reason given.** "Scala
+   punching the air rn", "Not very convincing", "There's a reason it's called
+   Namecheap not Namesafe."
+4. **Some are genuine questions asking for information rather than making a
+   claim.** "What are good alternatives to namecheap?", "What's a software
+   factory?"
+
+Possible fifth, seen twice: some attack the motive of the person instead of
+the argument ("I find this entirely self serving").
 
 
 ---

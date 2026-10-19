@@ -280,17 +280,27 @@ them, and there is no cold set for unit 6's agreement report.
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, max length 128
+tokens, seed 42. Trained on an Apple Silicon GPU (`mps`, torch 2.14.1), as
+recorded in `results.json`.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** Nothing. The only edit to
+the notebook was `LABELS = ["experience", "evidence", "opinion"]`. One thing
+to know: some HN comments run well past 128 tokens (I kept posts up to 1,500
+characters), so the model only sees the start of the longer ones.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 205 train / 44 val / 44 test (70/15/15, stratified).
 
+| Label | Train | Val | Test |
+|---|---|---|---|
+| `experience` | 38 | 8 | 8 |
+| `evidence` | 35 | 7 | 8 |
+| `opinion` | 132 | 29 | 28 |
 
+`experience` and `evidence` have exactly 8 each in test, right at the edge
+where per-label F1 gets jumpy: one post is 12.5% of that label's recall.
 
 ---
 

@@ -288,8 +288,13 @@ of next unit's variance. -->
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
+- *What I asked for:* Help with `criteria.md`. I chose the area and the
+  target number for each of the five criteria myself (macro F1 0.55,
+  per-label F1 0.40, 70% balance cap, +10 points confidence gap, 70% staff
+  agreement), and an AI wrote the wording and the "why" paragraphs from
+  facts about my data.
+- *What came back:* Five criteria in `criteria.md`, each tied to a metric the
+  notebook or `agreement.py` reports.
 - *What I changed:*
 
 **Pre-labelling disclosure:**

@@ -51,63 +51,60 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Macro F1 is at least 0.55 on the held-out test set, on all three seeds.
 
-<!-- Your criterion. It must name a number. -->
-
-
-
-**Why this target:**
-
-
-
----
-
-## 2.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** My data is lopsided toward `opinion` (about 65% in my
+Milestone 1 reading), so a model that always says `opinion` gets around 60%
+accuracy but only about 0.25 macro F1. Macro F1 weights `experience` and
+`evidence` equally with `opinion`, so 0.55 can only be reached if the model
+actually gets the two small labels right some of the time, not just the big
+one. I kept it at 0.55 rather than higher because with ~30 test posts and
+three seeds, one bad seed is likely.
 
 ---
 
-## 3.
+## 2. Every label (`experience`, `evidence`, `opinion`) has an F1 of at least 0.40 on the held-out test set, on all three seeds.
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
-
----
-
-## 4.
-
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** With 200 posts and `opinion` near 60%, `experience` and
+`evidence` will each have only about 6 posts in the test split, so one or two
+misclassified posts move their F1 by 0.10 or more. 0.40 is the floor below
+which I'd say the model hasn't learned that label at all. It is also the
+check that the model isn't just learning "first person = `experience`" and
+missing `evidence` entirely.
 
 ---
 
-## 5.
+## 3. No single label makes up more than 70% of `labels.csv`.
 
-<!-- Your criterion. -->
+**Why this target:** In my Milestone 1 reading `opinion` was already about
+65% of claim-making comments, so without deliberately pulling `experience`
+posts from Ask HN and vendor threads and `evidence` posts from technical
+threads, my data would drift past 70%. Above that, the model can score well by
+guessing `opinion` and criteria 1 and 2 stop meaning much. Checked by the
+label shares in notebook section 2.
 
+---
 
+## 4. On the held-out test set, accuracy on the model's most-confident third of predictions is at least 10 percentage points higher than on its least-confident third, on all three seeds.
 
-**Why this target:**
+**Why this target:** My hardest boundary (`experience` vs. `evidence`, a
+first-hand story that contains numbers) should be where the model is least
+sure. If confidence carries any signal, those borderline posts should pile up
+in the least-confident third and drag its accuracy down. 10 points is a
+small gap because each third is only about 10 posts, so one post is worth 10
+points. Checked by `accuracy_most_confident_third` and
+`accuracy_least_confident_third` in `results.json`.
 
+---
 
+## 5. When I label the 30 staff posts under the staff taxonomy, I agree with the staff labels on at least 70% of them (21 of 30).
+
+**Why this target:** This is the only outside check on whether I apply a
+written rule the way its authors meant it, which is the same skill my 200
+labels depend on. The staff taxonomy isn't mine and has a
+`hot_take`/`analysis` "does the fact carry the argument" rule close to my own
+`evidence`/`opinion` rule, so I expect to miss on the borderline posts. 70%
+allows up to 9 disagreements out of 30. Checked by `agreement.py`.
 
 ---
 

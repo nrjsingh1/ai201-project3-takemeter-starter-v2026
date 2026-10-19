@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+experience: describes a specific thing that happened to the writer or their team (something they did and what resulted) and uses it as the basis for what they say; numbers the reader can only verify by trusting the writer still count as experience
+evidence: makes a claim supported by a specific fact a reader could check without trusting the writer (a number, date, quote, named public event, or a link whose content the comment states), and the fact does work in the argument
+opinion: states a view, verdict, or feeling with no support offered, including one-line quips; a source named without saying what it shows, or a feeling about something the writer tried, is still opinion

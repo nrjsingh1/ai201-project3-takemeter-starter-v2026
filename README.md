@@ -79,33 +79,122 @@ the argument ("I find this entirely self serving").
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+Three labels. The question behind all three: **what is this comment's claim
+resting on?** The writer's own first-hand events, a fact anyone could check,
+or nothing.
 
-**Definition:**
+### `experience`
 
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** Describes a specific thing that happened to the writer or
+their team (something they did and what resulted) and uses it as the basis
+for what they say.
 
 **Example 1:**
->
+> Yea they did something like this with us. Fully turned off our business
+> domain because we didn't reply to a phishing email in 48 hours. We migrated
+> out the next day once we got it resolved. It took over 6 hours from when we
+> noticed the issue and responded until they turned it back on. Absolutely
+> horrible service.
 
 **Example 2:**
->
+> Namecheap cannot be trusted. I purchased a domain for a "normal" price (and
+> yes, I have receipts). Shortly after they realized they fucked up, voided
+> the purchase, and made it a $1,500 premium domain. Obviously, my
+> recommendation is to avoid Namecheap.
+
+### `evidence`
+
+**Definition:** Makes a claim supported by a specific fact a reader could
+check without trusting the writer: a number, a date, a quote, a named public
+event, or a link whose content the comment states.
+
+**Example 1:**
+> namecheap purchased by private equity CVC in 2025 for $1.5B so costs need to
+> go down (-human support + ai automation) and prices go up (they increased i
+> think .com 3 times this year alone)
+
+**Example 2:**
+> Java also has recursive patterns and (maybe still in preview) literal
+> patterns: `switch (x) { case A(B(true, var c)) -> f(c); }`
+
+### `opinion`
+
+**Definition:** States a view, verdict, or feeling with no support offered,
+including one-line quips. It might be true; it isn't backed.
+
+**Example 1:**
+> For me it just shows that modern math is not that important and mostly ego
+> driven. If it was important, mathematicians would cherish the progress. I
+> can't imagine bio researchers get mad that AI cured cancer.
+
+**Example 2:**
+> Everything is being rethought right now. So many paradigms are broken.
+> There wasn't ever a better time to build a software factory.
+
+### What doesn't get a label
+
+Pure questions ("What are good alternatives to namecheap?"), bare links with
+no text, and deleted or non-English comments are skipped at collection. They
+make no claim, so none of the three labels applies. In my Milestone 1 reading
+that was about 5 of 36 comments.
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `experience` vs. `evidence`
+
+The post that sits between them, from the Namecheap thread:
+> I've found really great but quite unique .com domain names available on name
+> cheap then mysteriously gone registered to name cheap within hours,
+> available for purchase at thousands. Always strenuously denied by the name
+> cheap CEO "we do not front run domain names!". I'd never do a domain name
+> check there again.
+
+It has specifics ("within hours", "at thousands") and a public statement by
+the CEO, but the core claim rests on what happened to the writer.
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+Ask where the support comes from. If the only way to verify it is to trust
+the writer's account of their own events ("I", "we", "my team"), it's
+`experience`, **even if it contains numbers**. If a reader could check it
+somewhere else (a public price, a release note, a news event, a quoted
+document), it's `evidence`. If a comment has both, label it by which kind the
+conclusion rests on; if that is still a tie, pick whichever the comment spends
+more words on. The post above is `experience`: the CEO quote is context, and
+the claim ("they front-run domains") rests on the writer's own searches.
+
+**Two smaller rules for the `opinion` boundaries** (both came out of the
+stress test below):
+
+- *`evidence` vs. `opinion`:* the fact has to be **stated and doing work**.
+  Naming a source without saying what it shows ("the survey proves it") or
+  tacking a number onto a conclusion that doesn't depend on it is `opinion`.
+- *`experience` vs. `opinion`:* there has to be a **specific event with an
+  outcome beyond the writer's feelings**. "I tried Kotlin and hated it" and
+  "everyone I know who used GoDaddy got burned" are `opinion`.
+
+### Stress test
+
+I had an AI write eight comments that sit on these boundaries, then
+classified each one under my draft definitions.
+
+| # | Comment | Label | Clean? |
+|---|---|---|---|
+| 1 | "We moved 40 domains off Namecheap last year; renewals were up 22% across the board." | `experience` | Yes, via the main rule |
+| 2 | "Namecheap's .com renewal went from $10.98 to $15.98 per their own pricing page. They're squeezing customers." | `evidence` | Yes |
+| 3 | "Rust is the future, the 2025 Stack Overflow survey proves it." | `opinion` | **No.** Draft didn't say the fact had to be stated → added "stated and doing work" |
+| 4 | "I tried Kotlin for a week and hated it. Java is just better." | `opinion` | **No.** Draft `experience` was "first-hand account" → added "outcome beyond feelings" |
+| 5 | "This gave me the final kick to move away from Namecheap." (real) | `opinion` | **No.** Same fix as #4 |
+| 6 | "Here's the CVE: [link]. This is exactly why you don't roll your own crypto." | `evidence` | Yes, the comment says what the link is |
+| 7 | "At my last job our Postgres cluster did 50k writes/sec, so the 'web scale' pitch never impressed me." | `experience` | Yes, via the main rule |
+| 8 | "Everyone I know who used GoDaddy got burned." | `opinion` | **No.** Generalized, no specific event → covered by the #4 fix |
+
+### Expected imbalance
+
+Of the ~31 claim-making comments I read in Milestone 1, about 20 were
+`opinion`, 5 `experience`, and 5 `evidence`. That puts `opinion` near 65%,
+close to the 70% cap. Collection will need to target threads that draw
+first-hand accounts (Ask HN, outage and vendor post-mortems) and technical
+threads that draw facts.
 
 
 
@@ -187,9 +276,15 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Eight made-up HN comments that sit on the boundaries
+  between my three draft labels.
+- *What came back:* Eight comments (see the stress-test table under Label
+  Taxonomy). Four of them I couldn't classify cleanly under the draft
+  definitions.
+- *What I changed:* `evidence` now requires the fact to be stated and doing
+  work, not just a source named. `experience` now requires a specific event
+  with an outcome beyond the writer's feelings, which moved "I tried X and
+  hated it" and "everyone I know got burned" into `opinion`.
 
 **Moment 2**
 

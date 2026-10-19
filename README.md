@@ -42,6 +42,14 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+TakeMeter sorts top-level [Hacker News](https://news.ycombinator.com)
+comments by what their claim rests on. `experience` comments argue from
+something that happened to the writer, `evidence` comments argue from a fact
+a reader could check, and `opinion` comments state a view with no support.
+It is a fine-tuned DistilBERT trained on 293 labelled comments from 14
+threads. On its first run (seed 42) it learned to call everything `opinion`;
+diagnosing that is unit 6's work.
+
 **Community:** [Hacker News](https://news.ycombinator.com) comment threads.
 Public, no login needed to read, text-only, and spread across many topics
 (tech, business, science, programming languages), so no single show or release
@@ -313,14 +321,22 @@ where per-label F1 gets jumpy: one post is 12.5% of that label's recall.
      workflow and disclosing it costs you nothing. Not disclosing it is the
      problem. -->
 
+**Overall:** I did this project with Claude (Claude Code) doing most of the
+hands-on work, and it should be read that way. Claude picked Hacker News
+after Reddit blocked automated access, read the Milestone 1 threads and
+wrote the candidate distinctions, drafted the three labels, definitions,
+examples and decision rules, collected the posts through the HN API, assigned
+every label, and ran the notebook. I chose the five criteria targets myself
+from options Claude laid out.
+
 **Moment 1**
 
-- *What I asked for:* Eight made-up HN comments that sit on the boundaries
-  between my three draft labels.
+- *What I asked for:* A stress test of the draft labels: eight made-up HN
+  comments that sit on the boundaries between them, each classified under
+  the draft definitions.
 - *What came back:* Eight comments (see the stress-test table under Label
-  Taxonomy). Four of them I couldn't classify cleanly under the draft
-  definitions.
-- *What I changed:* `evidence` now requires the fact to be stated and doing
+  Taxonomy). Four couldn't be classified cleanly under the draft definitions.
+- *What changed:* `evidence` now requires the fact to be stated and doing
   work, not just a source named. `experience` now requires a specific event
   with an outcome beyond the writer's feelings, which moved "I tried X and
   hated it" and "everyone I know got burned" into `opinion`.
@@ -330,11 +346,11 @@ where per-label F1 gets jumpy: one post is 12.5% of that label's recall.
 - *What I asked for:* Help with `criteria.md`. I chose the area and the
   target number for each of the five criteria myself (macro F1 0.55,
   per-label F1 0.40, 70% balance cap, +10 points confidence gap, 70% staff
-  agreement), and an AI wrote the wording and the "why" paragraphs from
+  agreement), and Claude wrote the wording and the "why" paragraphs from
   facts about my data.
 - *What came back:* Five criteria in `criteria.md`, each tied to a metric the
   notebook or `agreement.py` reports.
-- *What I changed:*
+- *What I changed:* Nothing. I kept the wording as drafted.
 
 **Pre-labelling disclosure:** All 293 rows were labelled by Claude from my
 definitions and decision rules, and I did not check them row by row or label

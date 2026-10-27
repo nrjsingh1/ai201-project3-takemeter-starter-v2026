@@ -363,6 +363,15 @@ Trained tables and the "What the gap actually means" paragraph from those
 results. I chose to see the results before writing a prediction, so there is
 none.
 
+**Unit 6, Milestones 2 and 3:** Claude ran notebook sections 1 and 6–7 from a
+script (not inside Jupyter, and without re-running section 4, so
+`results.json` was not overwritten), committed
+`results_three_seeds_before.json`, and wrote the Run Log tables and the
+explanations under them. For Milestone 3, I gave Claude the staff labels
+file before any labelling, then asked it to label the 30 staff posts anyway. Claude
+had already seen the answer key when it labelled them, so the 100% agreement
+is not a blind result. Claude also wrote the Agreement Report.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -443,7 +452,7 @@ in training. The staff agreement check is where I can test that.
 | 2. Every label's F1 | ≥ 0.40 | 0.000 | 0.000 | 0.000 | Fail (`experience` and `evidence` are 0 on every seed) |
 | 3. Largest label's share of `labels.csv` | ≤ 70% | 64.5% | 64.5% | 64.5% | Pass (dataset-level, so the same on every seed) |
 | 4. Most-sure third minus least-sure third | ≥ +10 points | +35.7 | +64.3 | +57.1 | Pass |
-| 5. Agreement with staff labels | ≥ 21 of 30 | — | — | — | Not run yet (needs `data/staff_labels.csv`) |
+| 5. Agreement with staff labels | ≥ 21 of 30 | 30 / 30 | — | — | Not valid: labelled after the answer key was seen (see Agreement Report). Not counted as a pass |
 
 All three seeds ran on the same device: Apple Silicon GPU (MPS), torch
 2.14.1, `max_length` 128, 3 epochs, learning rate 2e-5, batch size 16. Each
@@ -537,49 +546,32 @@ in Milestone 3 is where I can test whether my labels are also part of it.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 30 / 30 = 100% (`agreement_results.json`)
 
-<!-- Nobody grades this number. A 60% who argues every disagreement from the
-     stated rules beats a 95% who wrote "staff was right" nine times. Several
-     of the 30 were chosen because they're genuinely ambiguous — you should be
-     winning some of these. -->
+**⚠️ This rate is not valid evidence.** The milestone says to label the 30
+posts before opening `data/staff_labels.csv`. That did not happen. I gave Claude
+the staff labels file first, and then Claude labelled all 30 posts at my
+request, after the answer key had already been seen. A labeller who has read
+the key cannot label blind, so 100% here shows that the labels match the key.
+It says nothing about whether the staff rules can be applied consistently,
+and nothing about whether the 293 labels in `labels.csv` are consistent. I am
+not counting this as a pass on criterion 5.
 
 **Disagreements**
 
-<!-- Three lines each: the post, both labels, and who you think is right and
-     why — grounded in the staff definitions you were both applying.
-
-     Then sort each into one of three piles:
-       (a) the rule covered it and I applied it loosely → a consistency problem
-       (b) the rule genuinely doesn't say               → a gap in the definitions
-       (c) the rule is ambiguous here and my reading is defensible → argue it.
-           This is a legitimate win.
-
-     Pile (a) is the one that matters most for your diagnosis: if you applied a
-     written rule two different ways on 30 posts, that is direct evidence about
-     what you did across your own 200. -->
-
-**1.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
-
-**2.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
+None. With no disagreements there is nothing to adjudicate or sort into the
+three piles.
 
 **What the pattern in my disagreements tells me:**
 
-
+Nothing reliable, because the check was not run blind. That matters for
+Milestone 4. The agreement check was the only tool that could separate a
+labelling problem from a model problem, and it can't do that here. So the
+question raised in Milestone 2, whether the `experience` → `opinion`
+collapse comes partly from inconsistent labels in `labels.csv`, is still
+open. Those labels were also applied by Claude, without a cold set (see the
+pre-labelling disclosure above), so there is no independent check on them
+either.
 
 ---
 

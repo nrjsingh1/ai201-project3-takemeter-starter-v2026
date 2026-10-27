@@ -356,6 +356,13 @@ from options Claude laid out.
 definitions and decision rules, and I did not check them row by row or label
 a cold set myself. Claude also collected the posts through the HN API.
 
+**Unit 6, Milestone 1:** Claude ran `baseline.py` with my definitions, with
+bare label names, and with `--trained results.json`. It committed
+`baseline_results.json` and `baseline_bare.json`, and wrote the Baseline vs.
+Trained tables and the "What the gap actually means" paragraph from those
+results. I chose to see the results before writing a prediction, so there is
+none.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -402,6 +409,24 @@ writing one, so any prediction written now would be made after the fact.
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
+
+Fine-tuning added nothing on this run. The untrained baseline beats it on
+macro F1 (0.390 vs. 0.259), and that is the number that matters here.
+
+The tied accuracy (0.636) hides that difference. The trained model reaches
+0.636 by predicting `opinion` for all 44 posts, which is exactly the share of
+`opinion` in the test set (28 of 44). The baseline also predicts `opinion`
+for most posts (37 of 44), but it calls 7 posts `evidence` and 3 of those
+are right. That is the whole gap: an `evidence` F1 of 0.400 against 0.000.
+
+Neither model finds `experience`. The trained model never predicts it, and
+the baseline with my definitions never predicts it either. Of the 8
+`experience` posts, the baseline put 7 under `opinion` and 1 under `evidence`.
+The bare-names run did predict `experience`, but for 27 of 44 posts, so its
+`experience` F1 of 0.400 comes from over-guessing the label, not from telling
+it apart. Since two different models both fail on `experience`, the problem
+may be in the label itself or in how it was applied in `labels.csv`, not only
+in training. The staff agreement check is where I can test that.
 
 
 

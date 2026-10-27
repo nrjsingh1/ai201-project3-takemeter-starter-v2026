@@ -439,27 +439,63 @@ in training. The staff agreement check is where I can test that.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Macro F1 | ≥ 0.55 | 0.259 | 0.259 | 0.259 | Fail |
+| 2. Every label's F1 | ≥ 0.40 | 0.000 | 0.000 | 0.000 | Fail (`experience` and `evidence` are 0 on every seed) |
+| 3. Largest label's share of `labels.csv` | ≤ 70% | 64.5% | 64.5% | 64.5% | Pass (dataset-level, so the same on every seed) |
+| 4. Most-sure third minus least-sure third | ≥ +10 points | +35.7 | +64.3 | +57.1 | Pass |
+| 5. Agreement with staff labels | ≥ 21 of 30 | — | — | — | Not run yet (needs `data/staff_labels.csv`) |
+
+All three seeds ran on the same device: Apple Silicon GPU (MPS), torch
+2.14.1, `max_length` 128, 3 epochs, learning rate 2e-5, batch size 16. Each
+test split had 44 posts (28 `opinion`, 8 `experience`, 8 `evidence`). The
+numbers are in `results_three_seeds_before.json`.
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.636 | 0.636 | 0.636 | 0.000 |
+| Macro F1 | 0.259 | 0.259 | 0.259 | 0.000 |
+| F1 — `experience` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `evidence` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `opinion` | 0.778 | 0.778 | 0.778 | 0.000 |
+
+**The zero spread is not stability.** The notebook calls a 0.000 spread
+"stable enough to trust", but here it only means that all three models
+predicted `opinion` for every post. The splits are stratified, so every test
+set has 28 `opinion` posts out of 44, and a model that always answers
+`opinion` scores exactly 28/44 = 0.636 on any of them. The seeds agree
+because the model collapsed the same way three times, not because the
+measurement is reliable.
+
+Criterion 4 passes, but it measures something narrow here. Since every
+prediction is `opinion`, a "right" answer just means the post really is
+`opinion`. The gap says the model is more confident on real `opinion` posts
+than on the others, so it does pick up some signal, but not enough to change
+a single prediction.
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+Seed 42. Seeds 7 and 2024 produced the identical matrix.
+
+| true \ predicted | experience | evidence | opinion |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **experience** | 0 | 0 | 8 |
+| **evidence** | 0 | 0 | 8 |
+| **opinion** | 0 | 0 | 28 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
+
+All 8 real `experience` posts were called `opinion`, and 0 went the other way.
+The same is true of all 8 `evidence` posts, so the two cells tie at 8. This
+is not one boundary the model failed to learn: it learned no boundary at all
+and put every post under the majority label. The direction toward `opinion`
+fits the imbalance (65% of `labels.csv` is `opinion`), and the agreement check
+in Milestone 3 is where I can test whether my labels are also part of it.
 
 
 

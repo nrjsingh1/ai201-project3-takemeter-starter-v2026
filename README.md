@@ -376,6 +376,11 @@ is not a blind result. Claude also wrote the Agreement Report.
 three-seed results, the training log and the baseline predictions, including
 the argument for the opposite verdict on criterion 4.
 
+**Unit 6, Milestone 5:** Claude chose the change (EPOCHS 3 → 10) from the
+Milestone 4 diagnosis, edited the notebook, retrained the three seeds from a
+script, committed `results_three_seeds_after.json`, and wrote The
+Improvement section.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -627,26 +632,83 @@ either.
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** One training setting. `EPOCHS` went from 3 to 10 in
+notebook section 2. Nothing else changed: same 293 labels, same three seeds
+(42, 7, 2024), same splits, learning rate 2e-5, batch size 16,
+`max_length` 128, same device (Apple Silicon GPU, MPS). Section 6 ran with
+`RUN_LABEL = "after"`, so the before numbers in
+`results_three_seeds_before.json` were not overwritten. The new numbers are
+in `results_three_seeds_after.json`.
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** The diagnosis for criteria 1 and 2 found
+that training stopped before the model got anywhere. Validation loss was
+still falling at epoch 3 on every seed (0.88 → 0.85 → 0.84 on seed 42),
+while validation accuracy stayed fixed at the `opinion` share. Three epochs
+was only 39 weight updates. The diagnosis also named too few examples for
+the small labels. I chose more epochs because it is one setting, it tests the
+"stopped too early" part directly, and it keeps the labels unchanged, so any
+difference comes from training and not the data.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Macro F1 | ≥ 0.55 | 0.536 | 0.496 | 0.565 | MISSED (only seed 2024 reaches it) |
+| 2. Every label's F1 (lowest label shown) | ≥ 0.40 | 0.200 (`evidence`) | 0.182 (`experience`) | 0.364 (`evidence`) | MISSED |
+| 3. Largest label's share of `labels.csv` | ≤ 70% | 64.5% | 64.5% | 64.5% | MET (data unchanged) |
+| 4. Most-sure third minus least-sure third | ≥ +10 points | +42.9 | +42.9 | +28.6 | MET |
+| 5. Agreement with staff labels | ≥ 21 of 30 | 30 / 30 | — | — | NOT MET: still no valid measurement (unchanged by this run) |
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.705 | 0.705 | 0.727 | 0.023 |
+| Macro F1 | 0.536 | 0.496 | 0.565 | 0.069 |
+| F1 — `experience` | 0.588 | 0.182 | 0.500 | 0.406 |
+| F1 — `evidence` | 0.200 | 0.462 | 0.364 | 0.262 |
+| F1 — `opinion` | 0.820 | 0.844 | 0.831 | 0.024 |
+
+Confusion matrix after, seed 42:
+
+| true \ predicted | experience | evidence | opinion |
+|---|---|---|---|
+| **experience** | 5 | 0 | 3 |
+| **evidence** | 2 | 1 | 5 |
+| **opinion** | 2 | 1 | 25 |
 
 **Did it help, and how do I know:**
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
+Yes, a lot, but not enough to change a verdict. Before vs. after, side by side:
 
+| Measure | Before (3 epochs), all seeds | After (10 epochs): 42 / 7 / 2024 |
+|---|---|---|
+| Overall accuracy | 0.636 | 0.705 / 0.705 / 0.727 |
+| Macro F1 | 0.259 | 0.536 / 0.496 / 0.565 |
+| F1 — `experience` | 0.000 | 0.588 / 0.182 / 0.500 |
+| F1 — `evidence` | 0.000 | 0.200 / 0.462 / 0.364 |
+| F1 — `opinion` | 0.778 | 0.820 / 0.844 / 0.831 |
 
+- **The collapse is gone.** Before, every seed predicted `opinion` for all 44
+  posts. After, every seed predicts all three labels, and macro F1 roughly
+  doubled on every seed (0.259 → 0.496–0.565).
+- **It now beats the baseline.** The untrained baseline scored 0.390 macro F1
+  on the seed 42 test split. The retrained model scores 0.536 on that same
+  split, so fine-tuning now adds something it didn't before.
+- **It still misses criteria 1 and 2.** Macro F1 reaches 0.55 on one seed
+  out of three. The weakest label is below 0.40 on every seed, and it isn't
+  the same label each time (`evidence` on seeds 42 and 2024, `experience` on
+  seed 7).
+- **The small labels are now the unstable part.** `experience` F1 ranges
+  from 0.182 to 0.588 across seeds, a spread of 0.406. With 8 test posts per
+  small label, one post moves F1 a lot. That matches the "too few examples"
+  half of the diagnosis, which more epochs can't fix.
+- **The remaining errors still lean toward `opinion`.** On seed 42, 5 of 8
+  `evidence` posts and 3 of 8 `experience` posts went to `opinion`, while only
+  3 `opinion` posts went the other way. The lean is smaller than before but
+  in the same direction.
+
+In one sentence: training for 10 epochs instead of 3 fixed the collapse to
+`opinion` and doubled macro F1, but it did not lift either missed criterion
+over its target on all three seeds.
 
 ---
 

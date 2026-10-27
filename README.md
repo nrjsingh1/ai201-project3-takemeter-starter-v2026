@@ -370,14 +370,34 @@ a cold set myself. Claude also collected the posts through the HN API.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.636 | 0.636 | +0.000 |
+| Macro F1 | 0.390 | 0.259 | -0.130 |
+| F1 — `evidence` | 0.400 | 0.000 | -0.400 |
+| F1 — `experience` | 0.000 | 0.000 | +0.000 |
+| F1 — `opinion` | 0.769 | 0.778 | +0.009 |
+
+Both columns are on the same 44 held-out posts in `test_split.csv`. The
+baseline is `facebook/bart-large-mnli` zero-shot, prompted with the
+definitions in `label_definitions.txt` (`baseline_results.json`).
+
+**What the definitions were worth.** I also ran the baseline with bare label
+names only (`baseline_bare.json`). The baseline reported above is the
+definitions run.
+
+| Measure | Bare names | Definitions | Difference |
+|---|---|---|---|
+| Overall accuracy | 0.432 | 0.636 | +0.205 |
+| Macro F1 | 0.319 | 0.390 | +0.071 |
+| F1 — `evidence` | 0.000 | 0.400 | +0.400 |
+| F1 — `experience` | 0.400 | 0.000 | -0.400 |
+| F1 — `opinion` | 0.558 | 0.769 | +0.211 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
+
+I did not write a prediction. I saw the baseline and trained numbers before
+writing one, so any prediction written now would be made after the fact.
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added

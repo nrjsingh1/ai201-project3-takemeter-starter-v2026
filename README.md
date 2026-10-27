@@ -381,6 +381,18 @@ Milestone 4 diagnosis, edited the notebook, retrained the three seeds from a
 script, committed `results_three_seeds_after.json`, and wrote The
 Improvement section.
 
+**Unit 6, Milestone 6:** Claude wrote What's Still Broken and the label-gap
+sentences. A model did help me spot patterns in the errors: Claude pointed
+out that the before-run's mean confidence (0.61–0.67) matched the `opinion`
+share of the training set (64.4%), that validation loss was still falling at
+epoch 3, and that the untrained baseline also never predicted `experience`.
+Those three observations are the core of the Milestone 4 diagnosis and the
+reason for the Milestone 5 change. Across unit 6 as a whole, Claude ran every
+script and wrote every section. My part was choosing to proceed at each step,
+including the two choices that weakened the results: seeing the baseline
+before writing a prediction, and sharing the staff labels before any blind
+labelling.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -716,11 +728,51 @@ over its target on all three seeds.
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+After the 10-epoch run, three criteria are still not met.
 
+**Criterion 1 (macro F1 ≥ 0.55 on all three seeds): 0.536 / 0.496 / 0.565.**
+- *What I'd do next:* add about 30 more posts each of `experience` and
+  `evidence`, labelled under the same definitions. More epochs fixed the
+  "stopped too early" part of the diagnosis. What's left is the "too few
+  examples" part: with about 37 training posts per small label, and 8 per
+  small label in each test split, macro F1 still moves by 0.07 between seeds.
+- *Why I stopped:* Milestone 5 allows one change, so that I can tell which
+  change caused which difference. Adding data on top of the epoch change
+  would mix the two.
+
+**Criterion 2 (every label's F1 ≥ 0.40 on all three seeds): lowest label
+0.200 / 0.182 / 0.364.**
+- *What I'd do next:* the same extra examples, plus a second look at the
+  `evidence`/`opinion` boundary in `labels.csv`. `evidence` is the weakest
+  label on two of three seeds, and on seed 42, 5 of its 8 posts went to
+  `opinion`. My decision rule (a named source with no stated fact is
+  `opinion`) makes that boundary depend on a small detail in the text. I would
+  first label a cold sample of about 30 rows myself to check whether the rule
+  was applied consistently, before relabelling anything.
+- *Why I stopped:* the same one-change limit. Also, I have no valid evidence
+  yet that the boundary was applied inconsistently, so relabelling now would
+  be a guess.
+
+**Criterion 5 (agreement with staff ≥ 21 of 30): no valid measurement.**
+- *What I'd do next:* nothing can fix this for the staff set, because the
+  answer key has been seen and can't be unseen. The closest substitute is the
+  cold-sample check above: label about 30 rows of my own `labels.csv` blind,
+  without seeing the existing labels, and compare. That would give the
+  labelling-consistency evidence the agreement check was supposed to give.
+- *Why I stopped:* the staff labels were shared before any blind labelling
+  was done, so a valid result was no longer possible.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
+
+I meant the labels to capture what a comment's claim rests on: something that
+happened to the writer, a fact a reader could check, or nothing. Even after
+10 epochs the model mostly learned "default to `opinion`": on seed 42, 5 of 8
+`evidence` posts and 3 of 8 `experience` posts were called `opinion`, against
+only 3 of 28 `opinion` posts going the other way. So it picks up the
+`experience` posts it is surest of (5 of 8 right) but has not learned that a
+checkable fact doing work in the argument is what makes a post `evidence`.
 
 
 
@@ -741,18 +793,18 @@ learned:**
 
      SUBMISSION CHECKLIST — unit 6
 
-       [ ] Baseline vs. Trained table, with your prediction written beforehand
-       [ ] Run Log — Before, five criteria across three seeds
-       [ ] Confusion matrix TYPED AS A MARKDOWN TABLE
-       [ ] A verdict on every criterion
-       [ ] A diagnosis for every miss, using the agreement report as evidence
-       [ ] Agreement Report with every disagreement adjudicated
-       [ ] One improvement, with Run Log — After
-       [ ] What's Still Broken
-       [ ] results_three_seeds_before.json, results_three_seeds_after.json,
+       [~] Baseline vs. Trained table. No prediction: results were seen first (disclosed)
+       [x] Run Log — Before, five criteria across three seeds
+       [x] Confusion matrix TYPED AS A MARKDOWN TABLE
+       [x] A verdict on every criterion
+       [~] A diagnosis for every miss. Agreement report not valid as evidence (disclosed)
+       [~] Agreement Report: 0 disagreements, and the result is not blind (disclosed)
+       [x] One improvement, with Run Log — After
+       [x] What's Still Broken
+       [x] results_three_seeds_before.json, results_three_seeds_after.json,
            baseline_results.json and
            agreement_results.json committed
-       [ ] At least four new commits
+       [x] At least four new commits
        [ ] The SAME repository URL as last unit
 
      Do not delete and recreate this repository.

@@ -372,6 +372,10 @@ file before any labelling, then asked it to label the 30 staff posts anyway. Cla
 had already seen the answer key when it labelled them, so the 100% agreement
 is not a blind result. Claude also wrote the Agreement Report.
 
+**Unit 6, Milestone 4:** Claude wrote the verdicts and diagnoses from the
+three-seed results, the training log and the baseline predictions, including
+the argument for the opposite verdict on criterion 4.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -448,11 +452,11 @@ in training. The staff agreement check is where I can test that.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1. Macro F1 | ≥ 0.55 | 0.259 | 0.259 | 0.259 | Fail |
-| 2. Every label's F1 | ≥ 0.40 | 0.000 | 0.000 | 0.000 | Fail (`experience` and `evidence` are 0 on every seed) |
-| 3. Largest label's share of `labels.csv` | ≤ 70% | 64.5% | 64.5% | 64.5% | Pass (dataset-level, so the same on every seed) |
-| 4. Most-sure third minus least-sure third | ≥ +10 points | +35.7 | +64.3 | +57.1 | Pass |
-| 5. Agreement with staff labels | ≥ 21 of 30 | 30 / 30 | — | — | Not valid: labelled after the answer key was seen (see Agreement Report). Not counted as a pass |
+| 1. Macro F1 | ≥ 0.55 | 0.259 | 0.259 | 0.259 | MISSED |
+| 2. Every label's F1 | ≥ 0.40 | 0.000 | 0.000 | 0.000 | MISSED (`experience` and `evidence` are 0 on every seed) |
+| 3. Largest label's share of `labels.csv` | ≤ 70% | 64.5% | 64.5% | 64.5% | MET (dataset-level, so the same on every seed) |
+| 4. Most-sure third minus least-sure third | ≥ +10 points | +35.7 | +64.3 | +57.1 | MET |
+| 5. Agreement with staff labels | ≥ 21 of 30 | 30 / 30 | — | — | NOT MET: no valid measurement, because the labels were made after the answer key was seen (see Agreement Report) |
 
 All three seeds ran on the same device: Apple Silicon GPU (MPS), torch
 2.14.1, `max_length` 128, 3 epochs, learning rate 2e-5, batch size 16. Each
@@ -517,24 +521,70 @@ in Milestone 3 is where I can test whether my labels are also part of it.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Macro F1 on the test set, all three seeds | ≥ 0.55 | **MISSED** | 0.259 on every seed, less than half the target. No reading of three identical numbers reaches 0.55. |
+| 2 | Every label's F1, all three seeds | ≥ 0.40 | **MISSED** | `opinion` is 0.778 on every seed, but `experience` and `evidence` are 0.000 on every seed. |
+| 3 | Largest label's share of `labels.csv` | ≤ 70% | **MET** | `opinion` is 189 of 293 = 64.5%. This is a property of the dataset, not of a seed, so one number covers all three. |
+| 4 | Most-sure third beats least-sure third, all three seeds | ≥ +10 points | **MET** | +35.7, +64.3 and +57.1 points. The lowest is more than three times the target. See the caveat below. |
+| 5 | Agreement with staff labels | ≥ 21 of 30 | **NOT MET** | The script reports 30/30, but the labels were made after the answer key was seen, so the number doesn't measure what the criterion asks. A criterion with no valid measurement can't be called MET. |
+
+**Arguing the opposite verdict on criterion 4.** The strongest case for
+MISSED: the criterion was meant to show that borderline `experience` vs.
+`evidence` posts sit in the least-confident third. But the model never
+predicts either label, so that boundary is never tested. Every prediction is
+`opinion`, so "right" just means "the post really is `opinion`". The gap shows
+the model is a little more confident on real `opinion` posts, nothing more.
+I'm keeping MET because the criterion as written is measurable and passes on
+all three seeds. But the criterion has a hole: a model that has collapsed to
+one label can still pass it. I'm noting that here rather than revising the
+criterion, because the criterion wasn't unmeasurable, it was just met in a
+way I didn't anticipate.
 
 **Diagnoses**
 
-<!-- For each miss: the cause, and how you know. The four common causes are:
-     too few examples for a label, a boundary you applied inconsistently, a
-     genuinely hard label pair, and a task the model can't reach from this
-     much data.
+**Criteria 1 and 2 (macro F1, and the F1 for `experience` and `evidence`) share one cause: the model never moved off the majority label.** The evidence:
 
-     ⚠️ Use your agreement report as evidence. It is the only instrument you
-     have that can tell a LABELLING problem from a MODEL problem, and this
-     section is graded on whether you used it that way. -->
+- **It predicts `opinion` for every post, on every seed.** All three
+  confusion matrices are identical: 8 → `opinion`, 8 → `opinion`, 28 →
+  `opinion`. Changing the split changed nothing, so this isn't bad luck with
+  one split.
+- **Its confidence is just the label share.** `opinion` is 132 of 205
+  training posts (64.4%). The model's mean confidence is 0.61–0.67 on every
+  seed, which is about that share. It is outputting roughly "64% `opinion`"
+  for everything instead of reading the post.
+- **Training stopped before it got anywhere.** Validation accuracy was 0.659
+  (the `opinion` share of the validation set) after every one of the 3
+  epochs on all three seeds, while validation loss was still falling
+  (0.88 → 0.85 → 0.84 on seed 42). With 205 training posts and batch size
+  16, three epochs is only 39 weight updates at learning rate 2e-5. The loss
+  curve shows the model was still learning when training stopped.
 
+So of the four common causes, the main one is **too few examples for the
+small labels**, together with how short training was. About 37 training
+posts each for `experience` and `evidence`, against 132 for `opinion`, means
+predicting the majority label is the quickest way to lower the loss, and 39
+updates was not enough to get past that. The fix to try in Milestone 5 is
+weighting the classes, training for more epochs, or both.
 
+**A genuinely hard label pair may also be part of it, for `experience`.** The
+untrained baseline, given only my definitions, also never predicted
+`experience` (7 of the 8 real `experience` posts went to `opinion`). So two
+different models fail on that label in the same direction, which suggests the
+`experience`/`opinion` boundary is hard to see from the text alone, not just
+from too little data. I can't tell which of those matters more yet.
+
+**What I can't rule out: inconsistent labels.** The agreement check is the
+tool that could tell a labelling problem from a model problem, and mine is
+not valid (see Agreement Report). In addition, all 293 labels in `labels.csv`
+were applied by Claude with no cold set checked by me. So I have no evidence
+either way on whether the `experience`/`opinion` and `evidence`/`opinion`
+boundaries were applied consistently. The pattern in the matrix (everything
+going one way, to the biggest label) fits the imbalance explanation better
+than a labelling one, since inconsistent labels usually show up as errors in
+both directions. But that is an inference, not a measurement.
+
+**Criterion 5: missed for a process reason, not a model reason.** The cause
+is that the staff labels were seen before labelling, so the check was never
+run blind. Nothing about the model or the data explains it.
 
 ---
 

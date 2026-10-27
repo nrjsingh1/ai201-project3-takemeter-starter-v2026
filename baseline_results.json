@@ -1,0 +1,254 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 44,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 44,
+    "accuracy": 0.6363636363636364,
+    "f1_macro": 0.38974358974358975,
+    "per_label": {
+      "evidence": {
+        "precision": 0.42857142857142855,
+        "recall": 0.375,
+        "f1": 0.39999999999999997,
+        "support": 8
+      },
+      "experience": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 8
+      },
+      "opinion": {
+        "precision": 0.6756756756756757,
+        "recall": 0.8928571428571429,
+        "f1": 0.7692307692307693,
+        "support": 28
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Anyone without a big C in their job title will be on war footing soon enough.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Proxies are good if you pay API prices.\n\nFor subscriptions, it is easier to collect the JSONL files from ~/.claude/projects/ and similar directories. They are better organized (e.g., subagents) than what the proxy sees.\n\nHowever, the best value comes from collecting agent sessions across the whole organization. You'll need to scrub credentials and handle security.",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> a change to one of our database systems' permissions which caused the database to output multiple entries into a \u201cfeature file\u201d used by our Bot Management system ... to keep [that] system up to date with ever changing threats\n\n> The software had a limit on the size of the feature file that was below its doubled size. That caused the software to fail\n\nA configuration error can cause internet-scale outages. What an era we live in\n\nEdit: also, after finishing my reading, I have to express some surprise that this type of error wasn't caught in a staging environment. If the entire error is that \"during migration of ClickHouse nodes, the migration -> query -> configuration file pipeline caused configuration files to become illegally large\", it seems intuitive to me that doing this same migration in staging would have identified this exact error, no?\n\nI'm not big on distributed systems by any means, so maybe I'm overly naive, but frankly posting a faulty Rust code snippet that was unwrapping an error value without checking for the error didn't inspire confidence for me!",
+      "gold": "evidence",
+      "predicted": "opinion"
+    },
+    {
+      "text": "The article is more or less BS.\n\nFor one, the claim is that Intel misleads intentionally. Given the timeline there's no particular reason to think there is something intentional here. The AMD-optimized version of GROMACS just came out ~5 weeks ago.\n\nSecond, while this is misleading in a sense, it's in the way that benchmarks are all generally misleading. By their intrinsic nature they don't tell the whole story. (And of course marketing departments cherry-pick benchmarks to tell the story they want to tell. Also by intrinsic nature.)\n\nBTW, this isn't even all that bad for Intel. The AMD chip might outperform the Intel one, but only if your software has been specifically optimized for it.",
+      "gold": "evidence",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Despite the container support getting most of the attention, I discovered a measurable performance improvement with WSL3 by accident. Luckily I had another machine to upgrade so I ran an AB test comparing WSL 2 to WSL3 .\n\nIf you want a real bump in performance, I have a clever trick .  Hardware isn\u2019t cheap these days, so we demand the most of our software.",
+      "gold": "experience",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> work has already begun on how we will harden them against failures like this in the future. In particular we are:\n\n> Hardening ingestion of Cloudflare-generated configuration files in the same way we would for user-generated input\n\n> Enabling more global kill switches for features\n\n> Eliminating the ability for core dumps or other error reports to overwhelm system resources\n\n> Reviewing failure modes for error conditions across all core proxy modules\n\nAbsent from this list are canary deployments and incremental or wave-based deployment of configuration files (which are often as dangerous as code changes) across fault isolation boundaries -- assuming CloudFlare has such boundaries at all. How are they going to contain the blast radius in the future?\n\nThis is something the industry was supposed to learn from the CrowdStrike incident last year, but it's clear that we still have a long way to go.\n\nAlso, enabling global anything (i.e., \"enabling global kill switches for features\") sounds like an incredibly risky idea. One can imagine a bug in a global switch that transforms disabling a feature into disabling an entire system.",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "Awesome write up. I use EC2 t4g instances extensively as I tend to scale workloads horizontal (using Kubernetes, Docker) and admittedly the workloads aren\u2019t cpu constrained. Would be interesting to see how t4g\u2019s compare to other low end comparable VMs on GCP, DigitalOcean, Hetzner. Though I get the difficulty testing as it requires maxing out CPU credits (waiting) for accurate results before starting testing for each VM.\n\nLooking forward to t5g\u2019s whenever (if ever) they release.",
+      "gold": "opinion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "In spite of this, I actually kind of did build a \"software factory\". The main reason why was because there is a number of things I build that really are just means to an end, tools where I could not give a shit less if the code sucks or anything as long as it does roughly what I want. This stuff will most likely never be posted anywhere, but that's not the point, because it still has quite a bit of utility. Having a \"software factory\" to build and maintain it seemed a lot less annoying than being a \"meat proxy\" all day just to maintain some tools that aren't very important.\n\nI could be misunderstanding what a \"software factory\" is but I think whatever I have done fits the criteria. I have a custom agent that goes around implementing software and maintaining private repositories completely autonomously and I can communicate with it using issues and comments.\n\nIt seems like a useful pattern, just maybe not what people had in mind. I think people figured that you'd build an AI Microsoft or something. I don't think that's true because most of what a company like that does isn't really software engineering anyway, but there is probably still something to this pattern.",
+      "gold": "experience",
+      "predicted": "opinion"
+    },
+    {
+      "text": "About a year ago I wrote something similar about software, \"Now might be the best time to learn software development\": https://news.ycombinator.com/item?id=44299979\n\nReflecting on that a year later is interesting. Agents have become REALLY good since then, and I consider the \"writing code\" side of my profession to be largely annihilated. Some days that's really hard to accept.\n\nBut I think Grant's conclusion about math still largely echoes what I wrote about software: don't underestimate the social aspect of these activities, and if anything AI has made the social side more important. I deliberately avoided declaring, \"now is the best time to learn to write code\". I suspected that skill might be going out the window. But learning systems thinking and the social skills needed to connect people's dreams to reality continues to be an important art, an art I still have the privilege to practice every day.\n\nAnd if we do reach the \"anything you can do I can do better\" stage, then, as Grant said, that's a hard to imagine world, and one where \"it can write really good code\" might be the least of our problems.",
+      "gold": "experience",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I don't know about putting in the least amount of effort for 5 days a week. But what I do know is that in my country, the Netherlands, part-time work is more and more becoming the standard. Already, 75% of women and 30% of men work 32 hours a week or less. In many sectors the fulltime standard has been lowered to 36 hours, which means every other Friday off.\n\nI myself started on 40 and will move to 32 hours somewhere next year. It's your right by law to reduce your hours for the same pay/hour.\n\nSo my advice would be to look for remote only dev jobs in the Netherlands, and just ask to work 24h or 32h a week. It's very common here and won't be a roadblock.\n\nAlthough this is going to entirely depend on how much money you actually need to get by.",
+      "gold": "evidence",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I had a similar experience with Namecheap. Their bot crawled my website while it was still under construction and apparently reported it to some security databases, causing my domain to be flagged as suspicious.\n\nSince then, my domain's reputation has been affected, and I often get security warnings when trying to access my own website through my company's VPN.\n\nNamecheap simply informed me that it had been a mistake, but the damage was already done, and the issue still persists.",
+      "gold": "experience",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Microsoft still refuses to fix the most obvious issue here - Windows should be rebuilt on top of a linux kernel.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I love WSL, but giving this a major upgrade label (2 to 3) seems a bit of a stretch, at least from the viewpoint of an average dev user.\n\nPerhaps it reflects the amount of work and thought that has gone into it, but I really think the optics are better if the selling points are immediately obvious to the user.\n\nHopefully some light will be shed in further blogs.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "And one update later.. its goone.. wasted.. some jscript horror of add riddled always on game took it and ran with it. Imagine a department winning performance and one department squandering it meet for lunch in ms cafeteria. Akward..",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "tl;dr Hetzner has best performance for the price. But also Hetzner just bumped prices like 30%",
+      "gold": "evidence",
+      "predicted": "opinion"
+    },
+    {
+      "text": "And NEVER use an email address on some domain/service for administration of that domain/service.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I don't do this but I do have a system that imports all my conversations with AI (claude code, chatgpt, claude app, etc.) to a storage system I call Chatacombs: a unified storage of most conversations I've had with AI, as detailed as I can easily get.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Although I haven't tested it, I came up with an obfuscation technique that makes code readable to humans but confusing to LLMs.\n\nBasically you can write code inside the function in any order, my parser basically does data dependency analysis and re-orders it.\n\nhttps://github.com/xyzzyapps/weft",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I guess it depends how you look at it. I agree there's a lot of new products being built that will get zero maintenance. But also think there's some awesome stuff coming out that is changing the name of the game. And that's thanks to personal software factories. I think it's better to see it as a personal software lab rather than a factory.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Java also has recursive patterns and (maybe still in preview) literal patterns: `switch (x) { case A(B(true, var c)) -> f(c); }`",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "\u201cThey took\u2019er jobs!\u201d\n\nFunny when it\u2019s someone else eh?\n\nJust learn a new trade Terry.\n\n(I am kidding if it wasn't obvious)",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "An inhouse DBA (preferably something like SQL Server as it's quite straightforward). Get it set up/automated (back-ups etc) then the a good indicator that you are doing well is if you've nothing much to do.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Too early to tell, but IMO unlikely. Let's see what his take will be once an AI can propose a topic, write the script, animate, and narrate a good educational math video.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Hey, at least you're honest.\n\nIs the problem that your work has no meaning? There are plenty of nonprofits that are slugging away using inefficient processes that could benefit from a developer that makes them custom software. Maybe there's one out there that aligns with your hobbies?",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Namecheap is the worst! Our CTO left and our account was tied to his phone. Our CEO didn't want to talk to him, so, over chat, I made them remove the phone 2FA. They didn't authenticate me in any way - only gave them a good story and our username. I know people trash talk GoDaddy, but I've been the most happiest with them - they have support, if you have lots of domains, they assign to your an account exec that can do stuff for you. I've dealt with literally all registrars as I own thousands of domains. Nobody else comes close to GoDaddy - they have APIs, they have support, they listen. Plus, they are big and you can sue them - try suing company abroad if they mess up!\n\nAs far as I recall, Namecheap was based in Eastern Europe - as an Eastern European, I can tell you that I would never put anything important in an Eastern European company! Their new Spaceship offshoot is lipstick on a pig, literally.\n\nCloudflare is also not a good choice - you have no support! Porkbun may seem cool, but I'm not impressed as they lack some basic features such as profiles, let's say.",
+      "gold": "experience",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Well, if a deal sounds too cheap to be true ...",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Could get all the performance back if you just ran Linux natively.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "It's ironic to see Oracle as a value play, but you couldn't bank on that indefinitely.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "One of the things that springs to mind is coding emails.\nOnce you have a template that works in 99% of email readers you've done the majority of the work.\n\nThe downside is getting clients that need emails coded. This means you need to do some work to connect with people and get the ball rolling.\n\nI used to do this kind of thing many years ago for an advertising agency/publishing house. They had 5 magazine brands they ran and each of them would need a bi-weekly email to be sent to their newsletter subscribers.\nTheir designer would send through a psd, I'd code it up and load it into their mailing list software.\n\nAt the same time I was doing wordpress based \"catalog\" websites for them, also minimal interfacing with the client and the same \"psd => html\" workflow.\n\nIf you can get the energy to talk to an advertising agency or publishing house there may be something minimal that you can do for them.",
+      "gold": "experience",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Wow. 26M/s 5xx error HTTP status codes over a span of roughly two hours. That's roughly 187 billion HTTP errors that interrupted people (and systems)!",
+      "gold": "evidence",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Well, if you found a job that required a lot of repetitive manual tasks and you could write a little program or script and automate it (and not tell the company that you did so) you would suddenly find yourself with a lot of free time...",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "It's a little funny how quickly the conversation goes from \"AI will never be able to {my-field}\" before turning into \"We cannot have AI ruining {my-field} with its obviously superior abilities\"\n\nIf OpenAI had never made a push to get good at maths, we might still have a sizeable group of peopne stuck at that first line. I say that because I still hear in discussions the naive rebuttal \"But we'll still need _someone_ to {one-step-up-in-hierarchy}\" . Although you have to be curious now how long that sentiment can last.\n\nThe good news for those doing abstract maths might be that, now that OpenAI have proven that their AI can do the job in principle, there's probably not much left in it for them to keep going. Mathematicians should know better than anyone the lack of a direct profit motive in doing the work that they do.\n\n(Edited for clarity)",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Wow. What a post mortem. \nRather than Monday morning quarterbacking how many ways this could have been prevented, I'd love to hear people sound-off on things that unexpectedly broke. I, for one, did not realize logging in to porkbun to edit DNS settings would become impossible with a cloudflare meltdown",
+      "gold": "experience",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I jumped ship from Windows a couple of years ago after having used it since the early 90's. One of the primary reasons was how much I had to fight with WSL2 in my day-to-day work. But now it's becoming even more apparent that Microsoft does not care about its operating system. I don't even know what they could do to get me back. Trust continues to be a huge problem in the AI era of Microsoft.",
+      "gold": "experience",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I was under the impression that this was included in the current one big bill and will continue to be included.  It\u2019s not something we would expect to be removed.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "By running my own agent harness that provides detailed API metrics in the GUI and logs very verbosely.",
+      "gold": "opinion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "I find this entirely self serving.\n\nTerrence Tao was very supportive of AI and formalizing math with lean when it looked like it was giving \u2018generalists\u2019 like him an edge over mathematicians too deep into one particular niche field.\n\nBut now that it\u2019s letting everyone, including mathematicians who are perhaps too specialized, explore ideas and patterns from related math fields, he\u2019s suddenly \u2018on a war footing\u2019.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "Yes, but with strong exceptions against offshoring software development labor and H-1B abuse.\n\nBoth of these problems are rampant. I\u2019ve seen entire shops with underpaid foreign workers and mass layoffs with workers replaced with offshore and nearshore firms.",
+      "gold": "opinion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> devops/sysadmin\n\nWhile these certainly exist, you would need to know what your doing to not need to do much.\n\nAnd almost impossible to be remote.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "this is where change management really shines because in a change management environment this would have been prevented by a backout procedure and it would never have been rolled out to production before going into QA, with peer review happening before that... I don't know if they lack change management but it's definitely something to think about",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I think math will go the way of biology. Biologists enjoy untangling the infinitely complex mechanisms of life, including the brain, and win Nobel Prizes for discoveries like \"how water enters a cell,\" rather than \"constructing the first-ever cell capable of absorbing water.\"\n\nNo biologist has ever complained, \"Gee whiz, it's so unfortunate that we already have a brain to study. It's all so meaningless! It would be so much better if we had to construct the first-ever brain from scratch.\"",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "FWIW, seeing a security compliance label on an IoT product wouldn't mean anything to me as a consumer. There is no such thing as computer security in 2023, and there are no hints that security will exist at any point on the horizon. Even the biggest names in the field cannot put out secure products. Products from well-meaning manufacturers are going to be absolutely riddled with security problems, and putting a sticker on the box won't change that. It is literally impossible to put out a software product with anything resembling security today. It'd be like putting a \"secure against bricks\" sticker on a window.  Our industry is a joke. Building secure software products can't be done without completely rearchitecting how our industry operates, which isn't going to happen.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "I am boggled how the first step of an llm after you make an orchestrator isn't some kind of proxy that records your personal internet surfing to be used by your personal AI later.  Every college should be running in house AI with their own in house search engines and in house any service. Don't go to any college that wants you to use chatgpt or other corporate nonsense.  If they can't make local LLMs work, they are not a real college.",
+      "gold": "opinion",
+      "predicted": "opinion"
+    },
+    {
+      "text": "What makes IoT devices special, and warrants carve outs for security / vulnerabilities?\n\nI guess I am not surprised there are security issues with these devices, because I think of most of them as coming from small companies, and wonder what the impact would be on the IoT space if only large players can work through more regulation.\n\nThat said, I can't decide if I am more concerned about my Wyze camera sending data where I don't want it to, than my water heater leaking it's current temperature (implicating whether I am home or not).",
+      "gold": "opinion",
+      "predicted": "opinion"
+    }
+  ]
+}
